@@ -20,6 +20,14 @@ This project is to build an FL platform with FedML. This platform involves wirel
 
 ## Process Overview&#x20;
 
-<table><thead><tr><th>Timeline</th><th>Subworks</th><th data-type="users" data-multiple>Contributors</th><th>Progress</th></tr></thead><tbody><tr><td></td><td><a href="fedml-platform/project-overview/subwork-template.md">Subwork Template</a></td><td></td><td>100/100</td></tr><tr><td>During Semester</td><td>Pre-requisite: <a href="fedml-platform/project-overview/fedml-simulations.md">FedML simulations</a></td><td></td><td>--</td></tr><tr><td>During Semester</td><td>Pre-requisite: Simulation Implementation with Different Experimental Settings</td><td></td><td>0/100</td></tr><tr><td>1st month (Summer)</td><td>Deployment on Android</td><td></td><td>0/100</td></tr><tr><td>1st  month (Summer)</td><td>Deployment on IoTs</td><td></td><td>0/100</td></tr><tr><td>2nd month (Summer, 1~2 weeks)</td><td>Test Platform</td><td></td><td>0/100</td></tr><tr><td>Before summer ends</td><td>Implementation of Additional algorithms (Simulation + cross-devices)</td><td></td><td>0/100</td></tr></tbody></table>
+| Timeline            | Subworks                                                                                 | Contributors | Progress |
+| ------------------- | ---------------------------------------------------------------------------------------- | ------------ | -------- |
+|                     | [Subwork Template](fedml-platform/project-overview/subwork-template.md)                  |              | 100/100  |
+| During Semester     | Pre-requisite: [FedML simulations](fedml-platform/project-overview/fedml-simulations.md) | All          | --       |
+| During Semester     | Pre-requisite: Simulation Implementation with Different Experimental Settings            | All          | 0/100    |
+| 1st month (Summer)  | Deployment on Android (data access, platform management and training stability)          | Liu Rongfan  | 0/100    |
+| 1 month (Summer)    | Implementation of Additional algorithms (Simulation)                                     | Wang Yike    | 0/100    |
+| 1\~2 month (Summer) | On-device algorithms implementation, analysis                                            | Sun Tianxuan |          |
+| Before summer ends  | Test platform, on-device FL applications                                                 |              | 0/100    |
 
 ## Conclusion
