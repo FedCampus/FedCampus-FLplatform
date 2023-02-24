@@ -3,7 +3,8 @@
 ## FedML platform
 
 * [Project Overview](README.md)
-  * [FedML simulations](fedml-platform/project-overview/fedml-simulations.md)
+  * [FedML simulations](fedml-platform/readme/fedml-simulations/README.md)
+    * [Subwork\_Yike](fedml-platform/readme/fedml-simulations/subwork\_yike.md)
   * [Subwork-template](fedml-platform/project-overview/subwork-template.md)
 * [Supportive Resources](fedml-platform/supportive-resources.md)
 

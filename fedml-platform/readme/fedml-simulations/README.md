@@ -13,10 +13,10 @@ Reference: [Simulation Examples](https://github.com/FedML-AI/FedML/tree/master/p
 * **FedAvg**
   * **MINIST + LR**
   * **MINIST + CNN**
-  * #### Cifar10 + ResNet
-* #### ....
+  * **Cifar10 + ResNet**
+* **....**
 
-## Process&#x20;
+## Process
 
 Reference: [SIMULATION WITH A SINGLE PROCESS (STANDALONE)](https://doc.fedml.ai/simulation/examples/sp\_fedavg\_mnist\_lr\_example.html)
 
@@ -24,14 +24,10 @@ Reference: [SIMULATION WITH A SINGLE PROCESS (STANDALONE)](https://doc.fedml.ai/
 | ---------- | ------- | ---- |
 |            |         |      |
 
-[Step-by-step Instructions](../../usage/template.md)
+[Step-by-step Instructions](../../../usage/template.md)
 
 ## Reflections & Thoughts (Optional)
 
-<mark style="background-color:yellow;"></mark>
-
 ## Problems Encountered & Solutions
-
-<mark style="background-color:yellow;"></mark>
 
 ## Conclusion

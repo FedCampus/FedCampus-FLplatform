@@ -6,7 +6,7 @@ description: The remaining work, ongoing work, and finished work
 
 ## Project Introduction
 
-Federated learning is a machine learning technique that trains a model across multiple decentralized edge devices or servers holding local data samples without sharing data, thus allowing it to address critical issues such as data privacy, security, access rights, and access to heterogeneous data. Its applications are spread over several industries.&#x20;
+Federated learning is a machine learning technique that trains a model across multiple decentralized edge devices or servers holding local data samples without sharing data, thus allowing it to address critical issues such as data privacy, security, access rights, and access to heterogeneous data. Its applications are spread over several industries.
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -18,16 +18,16 @@ This project is to build an FL platform with FedML. This platform involves wirel
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>FedML Structure</p></figcaption></figure>
 
-## Process Overview&#x20;
+## Process Overview
 
-| Timeline            | Subworks                                                                                 | Contributors | Progress |
-| ------------------- | ---------------------------------------------------------------------------------------- | ------------ | -------- |
-|                     | [Subwork Template](fedml-platform/project-overview/subwork-template.md)                  |              | 100/100  |
-| During Semester     | Pre-requisite: [FedML simulations](fedml-platform/project-overview/fedml-simulations.md) | All          | --       |
-| During Semester     | Pre-requisite: Simulation Implementation with Different Experimental Settings            | All          | 0/100    |
-| 1st month (Summer)  | Deployment on Android (data access, platform management and training stability)          | Liu Rongfan  | 0/100    |
-| 1 month (Summer)    | Implementation of Additional algorithms (Simulation)                                     | Wang Yike    | 0/100    |
-| 1\~2 month (Summer) | On-device algorithms implementation, analysis                                            | Sun Tianxuan |          |
-| Before summer ends  | Test platform, on-device FL applications                                                 |              | 0/100    |
+| Timeline            | Subworks                                                                        | Contributors | Progress |
+| ------------------- | ------------------------------------------------------------------------------- | ------------ | -------- |
+|                     | [Subwork Template](fedml-platform/project-overview/subwork-template.md)         |              | 100/100  |
+| During Semester     | Pre-requisite: [FedML simulations](fedml-platform/readme/fedml-simulations/)    | All          | --       |
+| During Semester     | Pre-requisite: Simulation Implementation with Different Experimental Settings   | All          | 0/100    |
+| 1st month (Summer)  | Deployment on Android (data access, platform management and training stability) | Liu Rongfan  | 0/100    |
+| 1 month (Summer)    | Implementation of Additional algorithms (Simulation)                            | Wang Yike    | 0/100    |
+| 1\~2 month (Summer) | On-device algorithms implementation, analysis                                   | Sun Tianxuan |          |
+| Before summer ends  | Test platform, on-device FL applications                                        |              | 0/100    |
 
 ## Conclusion
