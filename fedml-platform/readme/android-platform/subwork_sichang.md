@@ -1,2 +1,57 @@
 # Subwork\_Sichang
 
+## Up till 2023/03/05
+
+- Read FedML background materials.
+- Ran FedML demo Python simulation.
+- Tried Android Studio, Kotlin, JetPack Compose.
+- Sketched tech stack plan for the Android platform.
+
+<details>
+<summary>Kotlit + FedML Java API, Django + FedML Python API + PostgreSQL, HTTPS poll</summary>
+
+Jiaqi asked me for a formal tech stack plan for the Android platform, here is my current sketch:
+
+Android client app: Single Kotlin app shipped to the user.
+
+- Data gathering: UI, user data collection and handling, and HTTPS client in Kotlin.
+- ML: Call FedML's Java API from Kotlin for local training (Kotlin has first-class Java interoperability).
+
+Server: Single modular Python server with single database.
+
+- Python as language of choice to best support ML exploration.
+- ML module:
+    - Call FedML's Python API from the server for aggregation.
+- Web module: gather and store data.
+    - Django for HTTPS server and database interface (ORM).
+    - PostgreSQL for database.
+
+HTTPS does not support broadcasting, and we cannot assume that the clients would always be on. So, I assume that the clients will poll the server for new information ever so often. We only need to implement a REST API or something equivalent for the communication.
+
+```mermaid
+graph TD;
+    K(Kotlin Android app)-->|directly call|J(FedML Java API);
+    K-->|poll|S(Django Server)
+    S-->|respond|K
+    S-->|communicate|D(PostgreSQL)
+    S-->|use API|M(Python ML module)
+    M-->|call|P(FedML Python API)
+```
+
+</details>
+
+- Looked for full-duplex communication protocol as demanded by Jiaqi.
+
+<details>
+<summary>Need an external push service.</summary>
+
+For [Push API][Push API], I only found [instruction to make push messages][make-push-message] which is for web apps. Unofficial instructions to make push messages to Android exist on [Intercom Developers][intercom-push-notifications] and [Iterable][iterable-push-notifications], both of which use Firebase for the push service.
+
+My *conclusion* is that we should consider these after we have a working poll model because they involve external services.
+
+</details>
+
+[Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
+[make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
+[intercom-push-notifications]: https://developers.intercom.com/installing-intercom/docs/react-native-push-notifications
+[iterable-push-notifications]: https://support.iterable.com/hc/en-us/articles/115000331943-Setting-up-Android-Push-Notifications-#_1-set-up-firebase-for-your-android-app
