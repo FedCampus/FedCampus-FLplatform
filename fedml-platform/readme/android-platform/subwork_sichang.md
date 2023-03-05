@@ -1,5 +1,18 @@
 # Subwork\_Sichang
 
+## Recommended Android Developer Tutorials
+
+- [x] [Build your first app](https://developer.android.com/training/basics/firstapp)
+- [ ] [Training courses](https://developer.android.com/courses)
+    - [x] [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
+    - [x] [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
+    - [ ] [Jetpack Compose for Android developers](https://developer.android.com/courses/jetpack-compose/course)
+    - [ ] [Modern Android app architecture](https://developer.android.com/courses/pathways/android-architecture)
+    - [ ] [Kotlin coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+- [ ] [Connectivity](https://developer.android.com/guide/topics/connectivity)
+- [ ] [Testing](https://developer.android.com/training/testing)
+- [ ] [Security best practices](https://developer.android.com/topic/security/best-practices)
+
 ## Up till 2023/03/05
 
 - Read FedML background materials.
