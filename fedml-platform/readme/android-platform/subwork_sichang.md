@@ -4,7 +4,6 @@ TODO: find Android Developer Tutorials for Java.
 
 <details>
 <summary>Useless resources since we are not going to use Kotlin.</summary>
-<s>
 
 ## Recommended Android Developer Tutorials
 
@@ -19,7 +18,6 @@ TODO: find Android Developer Tutorials for Java.
 - [ ] [Testing](https://developer.android.com/training/testing)
 - [ ] [Security best practices](https://developer.android.com/topic/security/best-practices)
 
-</s>
 </details>
 
 ## Up till 2023/03/05
@@ -79,7 +77,6 @@ TODO: find Android HTTPS client in Java instead.
 
 <details>
 <summary>Useless since we are not going to use Kotlin.</summary>
-<s>
 
 - Looked for Android HTTPS client resources.
     - [Perform network operations
@@ -91,7 +88,6 @@ TODO: find Android HTTPS client in Java instead.
     But, I figured out that I should first learn how to separate code in
     modules in Android apps.
 
-</s>
 </details>
 
 - Checked out the previous Android app `FedC`.
