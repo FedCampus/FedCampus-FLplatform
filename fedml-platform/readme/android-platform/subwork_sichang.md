@@ -1,11 +1,15 @@
 # Subwork\_Sichang
 
-TODO: find Android Developer Tutorials for Java.
+## Recommended Android Developer Tutorials
+
+- [ ] [Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
+- [ ] [Android Room with a View](https://developer.android.com/codelabs/android-room-with-a-view#0)
+- [ ] [Background Work with WorkManager](https://developer.android.com/codelabs/android-workmanager-java#0)
+
+More [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
 
 <details>
 <summary>Useless resources since we are not going to use Kotlin.</summary>
-
-## Recommended Android Developer Tutorials
 
 - [x] [Build your first app](https://developer.android.com/training/basics/firstapp)
 - [ ] [Training courses](https://developer.android.com/courses)
@@ -73,27 +77,21 @@ My *conclusion* is that we should consider these after we have a working poll mo
 
 ## Up till now
 
-TODO: find Android HTTPS client in Java instead.
-
-<details>
-<summary>Useless since we are not going to use Kotlin.</summary>
-
 - Looked for Android HTTPS client resources.
     - [Perform network operations
         overview][perform-network-operations-overview] from Android developers.
-    - [Ktor][ktor] the Kotlin HTTPS client/server library.
+    - ~~[Ktor][ktor] the Kotlin HTTPS client/server library.~~
+    - Android HTTPS client [Retrofit][retrofit].
     - [android/connectivity-samples][android-connectivity-samples],
         a Git repository of code samples.
-
-    But, I figured out that I should first learn how to separate code in
-    modules in Android apps.
-
-</details>
 
 - Checked out the previous Android app `FedC`.
     - The app architecture is similar in Java, although the UI uses XML.
     - `org.eclipse.paho.client.mqttv3` handles MQTT.
     - The connection blocks the main thread, causing UI lag.
+- Nuked Kotlin and related work out of the plan.
+- Looked for Android developers tutorial for Java instead.
+    - Hard to find because most are in Kotlin.
 
 [Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
 [make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
@@ -102,3 +100,4 @@ TODO: find Android HTTPS client in Java instead.
 [perform-network-operations-overview]: https://developer.android.com/training/basics/network-ops
 [ktor]: https://ktor.io
 [android-connectivity-samples]: https://github.com/android/connectivity-samples
+[retrofit]: https://square.github.io/retrofit/
