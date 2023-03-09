@@ -24,6 +24,24 @@ More [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android
 
 </details>
 
+## Up till now
+
+- Looked for Android HTTPS client resources.
+    - [Perform network operations
+        overview][perform-network-operations-overview] from Android developers.
+    - ~~[Ktor][ktor] the Kotlin HTTPS client/server library.~~
+    - Android HTTPS client [Retrofit][retrofit].
+    - [android/connectivity-samples][android-connectivity-samples],
+        a Git repository of code samples.
+
+- Checked out the previous Android app `FedC`.
+    - The app architecture is similar in Java, although the UI uses XML.
+    - `org.eclipse.paho.client.mqttv3` handles MQTT.
+    - The connection blocks the main thread, causing UI lag.
+- Nuked Kotlin and related work out of the plan.
+- Looked for Android developers tutorial for Java instead.
+    - Hard to find because most are in Kotlin.
+
 ## Up till 2023/03/05
 
 - Read FedML background materials.
@@ -74,24 +92,6 @@ For [Push API][Push API], I only found [instruction to make push messages][make-
 My *conclusion* is that we should consider these after we have a working poll model because they involve external services.
 
 </details>
-
-## Up till now
-
-- Looked for Android HTTPS client resources.
-    - [Perform network operations
-        overview][perform-network-operations-overview] from Android developers.
-    - ~~[Ktor][ktor] the Kotlin HTTPS client/server library.~~
-    - Android HTTPS client [Retrofit][retrofit].
-    - [android/connectivity-samples][android-connectivity-samples],
-        a Git repository of code samples.
-
-- Checked out the previous Android app `FedC`.
-    - The app architecture is similar in Java, although the UI uses XML.
-    - `org.eclipse.paho.client.mqttv3` handles MQTT.
-    - The connection blocks the main thread, causing UI lag.
-- Nuked Kotlin and related work out of the plan.
-- Looked for Android developers tutorial for Java instead.
-    - Hard to find because most are in Kotlin.
 
 [Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
 [make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
