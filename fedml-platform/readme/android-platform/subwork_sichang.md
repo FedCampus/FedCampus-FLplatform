@@ -75,6 +75,10 @@ My *conclusion* is that we should consider these after we have a working poll mo
 
     But, I figured out that I should first learn how to separate code in
     modules in Android apps.
+- Checked out the previous Android app `FedC`.
+    - The app architecture is similar in Java, although the UI uses XML.
+    - `org.eclipse.paho.client.mqttv3` handles MQTT.
+    - The connection blocks the main thread, causing UI lag.
 
 [Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
 [make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
