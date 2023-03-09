@@ -3,10 +3,15 @@
 ## Recommended Android Developer Tutorials
 
 - [ ] [Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
+- [ ] [Video: Android Development for Beginners](https://www.youtube.com/watch?v=fis26HvvDII)
 - [ ] [Android Room with a View](https://developer.android.com/codelabs/android-room-with-a-view#0)
 - [ ] [Background Work with WorkManager](https://developer.android.com/codelabs/android-workmanager-java#0)
 
-More [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
+### More Android resources
+
+- [javaTpoint](https://www.javatpoint.com/android-tutorial)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
+- [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
 
 <details>
 <summary>Useless resources since we are not going to use Kotlin.</summary>
