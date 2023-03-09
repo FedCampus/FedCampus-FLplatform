@@ -1,5 +1,8 @@
 # Subwork\_Sichang
 
+<details>
+<summary>Useless resources since we are not going to use Kotlin.</summary>
+
 ## Recommended Android Developer Tutorials
 
 - [x] [Build your first app](https://developer.android.com/training/basics/firstapp)
@@ -13,6 +16,8 @@
 - [ ] [Testing](https://developer.android.com/training/testing)
 - [ ] [Security best practices](https://developer.android.com/topic/security/best-practices)
 
+</details>
+
 ## Up till 2023/03/05
 
 - Read FedML background materials.
@@ -21,14 +26,14 @@
 - Sketched tech stack plan for the Android platform.
 
 <details>
-<summary>Kotlit + FedML Java API, Django + FedML Python API + PostgreSQL, HTTPS poll</summary>
+<summary>Java + FedML Java API, Django + FedML Python API + PostgreSQL, HTTPS poll</summary>
 
 Jiaqi asked me for a formal tech stack plan for the Android platform, here is my current sketch:
 
-Android client app: Single Kotlin app shipped to the user.
+Android client app: Single Java app shipped to the user.
 
-- Data gathering: UI, user data collection and handling, and HTTPS client in Kotlin.
-- ML: Call FedML's Java API from Kotlin for local training (Kotlin has first-class Java interoperability).
+- Data gathering: UI, user data collection and handling, and HTTPS client in Java.
+- ML: Call FedML's Java API for local training.
 
 Server: Single modular Python server with single database.
 
@@ -43,7 +48,7 @@ HTTPS does not support broadcasting, and we cannot assume that the clients would
 
 ```mermaid
 graph TD;
-    K(Kotlin Android app)-->|directly call|J(FedML Java API);
+    K(Java Android app)-->|directly call|J(FedML Java API);
     K-->|poll|S(Django Server)
     S-->|respond|K
     S-->|communicate|D(PostgreSQL)
@@ -66,6 +71,9 @@ My *conclusion* is that we should consider these after we have a working poll mo
 
 ## Up till now
 
+<details>
+<summary>Useless since we are not going to use Kotlin.</summary>
+
 - Looked for Android HTTPS client resources.
     - [Perform network operations
         overview][perform-network-operations-overview] from Android developers.
@@ -75,6 +83,9 @@ My *conclusion* is that we should consider these after we have a working poll mo
 
     But, I figured out that I should first learn how to separate code in
     modules in Android apps.
+
+</details>
+
 - Checked out the previous Android app `FedC`.
     - The app architecture is similar in Java, although the UI uses XML.
     - `org.eclipse.paho.client.mqttv3` handles MQTT.
