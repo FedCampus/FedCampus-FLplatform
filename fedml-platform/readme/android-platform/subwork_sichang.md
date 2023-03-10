@@ -2,7 +2,7 @@
 
 ## Recommended Android Developer Tutorials
 
-- [ ] [Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
+- [x] [Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
 - [ ] [Video: Android Development for Beginners](https://www.youtube.com/watch?v=fis26HvvDII)
 - [ ] [Android Room with a View](https://developer.android.com/codelabs/android-room-with-a-view#0)
 - [ ] [Background Work with WorkManager](https://developer.android.com/codelabs/android-workmanager-java#0)
@@ -46,6 +46,7 @@
 - Nuked Kotlin and related work out of the plan.
 - Looked for Android developers tutorial for Java instead.
     - Hard to find because most are in Kotlin.
+- Tried Retrofit and made blocking GET request not in strict mode.
 
 ## Up till 2023/03/05
 
