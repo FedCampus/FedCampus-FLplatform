@@ -31,21 +31,6 @@
 
 ## Up till now
 
-- Looked for Android HTTPS client resources.
-    - [Perform network operations
-        overview][perform-network-operations-overview] from Android developers.
-    - ~~[Ktor][ktor] the Kotlin HTTPS client/server library.~~
-    - Android HTTPS client [Retrofit][retrofit].
-    - [android/connectivity-samples][android-connectivity-samples],
-        a Git repository of code samples.
-
-- Checked out the previous Android app `FedC`.
-    - The app architecture is similar in Java, although the UI uses XML.
-    - `org.eclipse.paho.client.mqttv3` handles MQTT.
-    - The connection blocks the main thread, causing UI lag.
-- Nuked Kotlin and related work out of the plan.
-- Looked for Android developers tutorial for Java instead.
-    - Hard to find because most are in Kotlin.
 - Tried Retrofit and made blocking GET request not in strict mode.
 
 <details>
@@ -95,6 +80,24 @@ Flowable.fromCallable(someIoTaskFunction)
     Very minimal changes and easy.
 - Set up test repository
     [AndroidClient_django_server_POC][client-server-test-repo].
+
+## Up till 2023/3/9
+
+- Looked for Android HTTPS client resources.
+    - [Perform network operations
+        overview][perform-network-operations-overview] from Android developers.
+    - ~~[Ktor][ktor] the Kotlin HTTPS client/server library.~~
+    - Android HTTPS client [Retrofit][retrofit].
+    - [android/connectivity-samples][android-connectivity-samples],
+        a Git repository of code samples.
+
+- Checked out the previous Android app `FedC`.
+    - The app architecture is similar in Java, although the UI uses XML.
+    - `org.eclipse.paho.client.mqttv3` handles MQTT.
+    - The connection blocks the main thread, causing UI lag.
+- Nuked Kotlin and related work out of the plan.
+- Looked for Android developers tutorial for Java instead.
+    - Hard to find because most are in Kotlin.
 
 ## Up till 2023/03/05
 
