@@ -80,6 +80,30 @@ Flowable.fromCallable(someIoTaskFunction)
     Very minimal changes and easy.
 - Set up test repository
     [AndroidClient_django_server_POC][client-server-test-repo].
+- TODO: Set up JSON API. JSON structures according to Jiaqi:
+    - [ ] POST
+
+        ```json
+        {
+            "device_id": 0,
+            "send_time": 04224314,
+            "local_loss": 0.452,
+            "local_weights": [0, 24, 5],
+            "training_duration": 34.542
+        }
+        ```
+
+    - [ ] GET
+
+        ```json
+        {
+            "configuration": {
+                "learning_rate": 0.1
+            },
+            "send_time": 04224314,
+            "global_weights": [34, 65, 7]
+        }
+        ```
 
 ## Up till 2023/3/9
 
