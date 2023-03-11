@@ -90,26 +90,26 @@ Flowable.fromCallable(someIoTaskFunction)
     [AndroidClient_django_server_POC][client-server-test-repo].
     - Android client was able to make GET request to the server.
 - TODO: Set up JSON API. JSON structures according to Jiaqi:
-    - [ ] POST
+    - [x] POST
 
         ```json
         {
             "device_id": 0,
-            "send_time": 04224314,
+            "send_time": 104224314.342,
             "local_loss": 0.452,
             "local_weights": [0, 24, 5],
             "training_duration": 34.542
         }
         ```
 
-    - [ ] GET
+    - [x] GET
 
         ```json
         {
             "configuration": {
                 "learning_rate": 0.1
             },
-            "send_time": 04224314,
+            "send_time": 104224314.342,
             "global_weights": [34, 65, 7]
         }
         ```
