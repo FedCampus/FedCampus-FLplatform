@@ -89,6 +89,10 @@ Flowable.fromCallable(someIoTaskFunction)
 
 </details>
 
+- Tried supporting Kotlin in existing Java app and calling Kotlin from Java.
+    [Commit](https://github.com/SichangHe/learn_program/commit/563205ca8f812848391b6cfc5033a587707a7b16).
+    Very minimal changes and easy.
+
 ## Up till 2023/03/05
 
 - Read FedML background materials.
