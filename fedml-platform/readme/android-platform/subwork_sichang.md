@@ -48,6 +48,47 @@
     - Hard to find because most are in Kotlin.
 - Tried Retrofit and made blocking GET request not in strict mode.
 
+<details>
+<summary>Dependency settings.</summary>
+
+```xml
+<!-- AndroidManifest.xml -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+```gradle
+// build.gradle
+implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+implementation 'com.google.code.gson:gson:2.10.1'
+```
+
+</details>
+
+- Tried Retrofit with [RxAndroid][RxAndroid] and [RxJava][RxJava] for
+    non-blocking requests.
+
+<details>
+<summary>Using RxJava for non-blocking IO.</summary>
+
+```gradle
+// build.gradle
+implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+```
+
+```java
+Flowable.fromCallable(someIoTaskFunction)
+    .subscribeOn(Schedulers.io())
+    .observeOn(AndroidSchedulers.mainThread())
+    .subscribe(
+        // What to do on the main thread after `someIoTaskFunction` returns.
+        functionOnSuccess, functionOnFailure));
+```
+
+</details>
+
 ## Up till 2023/03/05
 
 - Read FedML background materials.
@@ -107,3 +148,5 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [ktor]: https://ktor.io
 [android-connectivity-samples]: https://github.com/android/connectivity-samples
 [retrofit]: https://square.github.io/retrofit/
+[RxAndroid]: https://github.com/ReactiveX/RxAndroid
+[RxJava]: https://github.com/ReactiveX/RxJava
