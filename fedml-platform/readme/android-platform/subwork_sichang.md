@@ -29,6 +29,14 @@
 
 </details>
 
+## Recommended Django REST resources
+
+- [Writing your first Django app, part
+    1](https://docs.djangoproject.com/en/4.0/intro/tutorial01/)
+- [Django REST Framework
+    Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
+- [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
+
 ## Up till now
 
 - Tried Retrofit and made blocking GET request not in strict mode.
@@ -80,6 +88,7 @@ Flowable.fromCallable(someIoTaskFunction)
     Very minimal changes and easy.
 - Set up test repository
     [AndroidClient_django_server_POC][client-server-test-repo].
+    - Android client was able to make GET request to the server.
 - TODO: Set up JSON API. JSON structures according to Jiaqi:
     - [ ] POST
 
@@ -104,6 +113,10 @@ Flowable.fromCallable(someIoTaskFunction)
             "global_weights": [34, 65, 7]
         }
         ```
+
+- [ ] TODO: Use HTTPS. `manage.py runserver` does not support HTTPS.
+    [DjangoRestFramework HTTPS Links With Routers and
+    Viewsets](https://stackoverflow.com/questions/22279893/djangorestframework-https-links-with-routers-and-viewsets).
 
 ## Up till 2023/3/9
 
