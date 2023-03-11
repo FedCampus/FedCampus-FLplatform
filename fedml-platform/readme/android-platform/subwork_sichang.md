@@ -91,7 +91,10 @@ Flowable.fromCallable(someIoTaskFunction)
 
 - Tried supporting Kotlin in existing Java app and calling Kotlin from Java.
     [Commit](https://github.com/SichangHe/learn_program/commit/563205ca8f812848391b6cfc5033a587707a7b16).
+    [Answer on StackOverflow](https://stackoverflow.com/a/75702627/17800723).
     Very minimal changes and easy.
+- Set up test repository
+    [AndroidClient_django_server_POC][client-server-test-repo].
 
 ## Up till 2023/03/05
 
@@ -154,3 +157,4 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [retrofit]: https://square.github.io/retrofit/
 [RxAndroid]: https://github.com/ReactiveX/RxAndroid
 [RxJava]: https://github.com/ReactiveX/RxJava
+[client-server-test-repo]: https://github.com/SichangHe/AndroidClient_django_server_POC
