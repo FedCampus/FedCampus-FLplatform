@@ -39,6 +39,8 @@
 
 ## Up till now
 
+## Up till 2023/03/12
+
 - Tried Retrofit and made blocking GET request not in strict mode.
 
 <details>
@@ -89,36 +91,62 @@ Flowable.fromCallable(someIoTaskFunction)
 - Set up test repository
     [AndroidClient_django_server_POC][client-server-test-repo].
     - Android client was able to make GET request to the server.
-- TODO: Set up JSON API. JSON structures according to Jiaqi:
-    - [x] POST
+- Set up fake JSON API.
+    Made requests successfully both in Java test and on Android emulator.
 
-        ```json
-        {
-            "device_id": 0,
-            "send_time": 104224314.342,
-            "local_loss": 0.452,
-            "local_weights": [0, 24, 5],
-            "training_duration": 34.542
-        }
-        ```
+<details>
+<summary>JSON structures according to Jiaqi.</summary>
 
-    - [x] GET
+- POST
 
-        ```json
-        {
-            "configuration": {
-                "learning_rate": 0.1
-            },
-            "send_time": 104224314.342,
-            "global_weights": [34, 65, 7]
-        }
-        ```
+    ```json
+    {
+        "device_id": 0,
+        "send_time": 104224314.342,
+        "local_loss": 0.452,
+        "local_weights": [0, 24, 5],
+        "training_duration": 34.542
+    }
+    ```
 
-- [ ] TODO: Use HTTPS. `manage.py runserver` does not support HTTPS.
-    [DjangoRestFramework HTTPS Links With Routers and
-    Viewsets](https://stackoverflow.com/questions/22279893/djangorestframework-https-links-with-routers-and-viewsets).
+- GET
 
-## Up till 2023/3/9
+    ```json
+    {
+        "configuration": {
+            "learning_rate": 0.1
+        },
+        "send_time": 104224314.342,
+        "global_weights": [34, 65, 7]
+    }
+    ```
+
+</details>
+
+<details>
+<summary>Temporary solutions to enable local testing on Android emulator</summary>
+
+- Allow HTTP requests.
+
+    ```xml
+    <!-- AndroidManifest.xml -->
+    <application android:usesCleartextTraffic="true" …>
+            …
+    </application>
+    ```
+
+- Use localhost on emulators according to [Network address
+    space](https://developer.android.com/studio/run/emulator-networking#networkaddresses).
+- Allow localhost on Django server.
+
+    ```python
+    # django_server/settings.py
+    ALLOWED_HOSTS = ["10.0.2.2"]
+    ```
+
+</details>
+
+## Up till 2023/03/09
 
 - Looked for Android HTTPS client resources.
     - [Perform network operations
@@ -186,6 +214,15 @@ For [Push API][Push API], I only found [instruction to make push messages][make-
 My *conclusion* is that we should consider these after we have a working poll model because they involve external services.
 
 </details>
+
+## TODOs for Production
+
+- [ ] Use HTTPS. `manage.py runserver` does not support HTTPS.
+    [DjangoRestFramework HTTPS Links With Routers and
+    Viewsets](https://stackoverflow.com/questions/22279893/djangorestframework-https-links-with-routers-and-viewsets).
+- [ ] Change `baseUrl` in all `Retrofit` instances.
+- [ ] Remove `usesCleartextTraffic` in `AndroidManifest.xml`.
+- [ ] Disallow `ALLOW_HOST` `10.0.2.2` on Django server `settings.py`.
 
 [Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
 [make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
