@@ -2,7 +2,7 @@
 
 ## Plan
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (3).png>)
 
 **Android client app:** Single Kotlin app shipped to the user.
 
