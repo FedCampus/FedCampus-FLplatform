@@ -9,6 +9,7 @@
 
 ### More Android resources
 
+- [FedML Android demo](https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html)
 - [javaTpoint](https://www.javatpoint.com/android-tutorial)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
 - [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
