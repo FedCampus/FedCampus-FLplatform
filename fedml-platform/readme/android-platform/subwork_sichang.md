@@ -9,7 +9,7 @@
 
 ### More Android resources
 
-- [FedML Android demo](https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html)
+- [FedML Android demo][fedml-android-demo]
 - [javaTpoint](https://www.javatpoint.com/android-tutorial)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
 - [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
@@ -39,6 +39,13 @@
 - [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
 
 ## Up till now
+
+- Studied [FedML Android demo][fedml-android-demo].
+    - Requires manually cloning MNN and configuring Cpp toolchain to build.
+    - Uses JNI to call Cpp function from Java.
+    - FedML wants you to use their platform as a service,
+        register an account, connect your app to them and manage online.
+    - Android SDK API documents are basically nonexistent.
 
 ## Up till 2023/03/12
 
@@ -236,3 +243,4 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [RxAndroid]: https://github.com/ReactiveX/RxAndroid
 [RxJava]: https://github.com/ReactiveX/RxJava
 [client-server-test-repo]: https://github.com/SichangHe/AndroidClient_django_server_POC
+[fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html
