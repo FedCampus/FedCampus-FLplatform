@@ -46,6 +46,35 @@
     - FedML wants you to use their platform as a service,
         register an account, connect your app to them and manage online.
     - Android SDK API documents are basically nonexistent.
+- Read FedML Android SDK codebase because no documentation.
+
+<details>
+<summary>
+The stack of abstraction layers for training from bottom to top.
+
+Found the bottom by searching for `System.loadLibrary`.
+</summary>
+
+- `ai/fedml/edge/nativemobilenn/NativeFedMLClientManager.java`
+    is the binding for MNN, the deep learning library in Cpp.
+- `ai/fedml/edge/service/TrainingExecutor.java`
+    is the higher level API for training.
+- `ai/fedml/edge/service/ClientManager.java`
+    handles both MQTT communication and training.
+    Still has `TODO` comments in it.
+- `ai/fedml/edge/service/ClientAgentManager.java`
+    provides one "documented" method.
+- `ai/fedml/edge/service/FedEdgeTrainImpl.java`
+- `ai/fedml/edge/service/EdgeService.java`
+    is made into a `Service`.
+- `ai/fedml/edge/FedEdgeImpl.java`
+    runs the service using an `Intent`.
+- `ai/fedml/edge/FedEdgeManager.java`
+    > This is the top APIs in FedML Android SDK,
+    > it supports core training engine and related control commands
+    > on your Android devices.
+
+</details>
 
 ## Up till 2023/03/12
 
