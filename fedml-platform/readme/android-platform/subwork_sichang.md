@@ -76,6 +76,18 @@ Found the bottom by searching for `System.loadLibrary`.
 
 </details>
 
+- Investigated FedML platform lock-in and cloud lock-in.
+
+    Unfortunately, FedML Android SDK forces the users to use open.fedml.ai as a
+    proxy for all MQTT traffic.
+    - Forced MNN on Android
+- Investigated using the same Machine Learning model on different platforms.
+    - [Open Neural Network Exchange (ONNX)][onnx] supports major Machine
+        Learning libraries.
+        - [Deploy ONNX](https://onnxruntime.ai/docs/tutorials/mobile/#develop-the-application)
+        - [Their runtimes](https://onnxruntime.ai)
+        - [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
+
 ## Up till 2023/03/12
 
 - Tried Retrofit and made blocking GET request not in strict mode.
@@ -273,3 +285,4 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [RxJava]: https://github.com/ReactiveX/RxJava
 [client-server-test-repo]: https://github.com/SichangHe/AndroidClient_django_server_POC
 [fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html
+[onnx]: https://onnx.ai
