@@ -38,6 +38,19 @@
     Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
 - [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
 
+## TODOs
+
+- [ ] ONNX-based FL demo.
+    - [ ] Android client running ONNX runtime.
+        When fake local data are generated,
+        GET server for new parameters and train on fake local data.
+        After training finish,
+        POST server parameter and wait for more fake local data.
+    - [ ] Django server distributing and averaging the received parameters.
+        Receive parameters each round and average them.
+        Send clients new parameters when asked.
+    - [ ] Communication using HTTP.
+
 ## Up till now
 
 - Studied [FedML Android demo][fedml-android-demo].
