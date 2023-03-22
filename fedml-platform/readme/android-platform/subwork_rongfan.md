@@ -10,6 +10,12 @@
 https://mnn-docs.readthedocs.io/en/latest/compile/engine.html#android
 
 ## Subwork: Deployment on Android (data access, platform management and training stability)
+
+* 2023/3/21
+  * Experimented modification with https://github.com/FedML-AI/FedML/tree/master/android/app to implement ai.fedml.edge.FedEdgeManager
+  * Recommend detailed tutorial on django https://www.youtube.com/watch?v=VnztChBw7Og
+  * Having questions about the choice of library for model building, and having questions about undocumented api in general
+
 * 2023/3/14
   *  Finished the tutorial https://www.youtube.com/watch?v=rHux0gMZ3Eg
   *  Experimented on getting location through package com.google.android.gms.location
