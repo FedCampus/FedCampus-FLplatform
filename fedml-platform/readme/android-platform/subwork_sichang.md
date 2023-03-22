@@ -9,7 +9,7 @@
 
 ### More Android resources
 
-- [FedML Android demo](https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html)
+- [FedML Android demo][fedml-android-demo]
 - [javaTpoint](https://www.javatpoint.com/android-tutorial)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
 - [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
@@ -38,7 +38,68 @@
     Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
 - [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
 
+## TODOs
+
+- [ ] ONNX-based FL demo.
+    - [ ] Android client running ONNX runtime.
+        When fake local data are generated,
+        GET server for new parameters and train on fake local data.
+        After training finish,
+        POST server parameter and wait for more fake local data.
+    - [ ] Django server distributing and averaging the received parameters.
+        Receive parameters each round and average them.
+        Send clients new parameters when asked.
+    - [ ] Communication using HTTP.
+
 ## Up till now
+
+- Studied [FedML Android demo][fedml-android-demo].
+    - Requires manually cloning MNN and configuring Cpp toolchain to build.
+    - Uses JNI to call Cpp function from Java.
+    - FedML wants you to use their platform as a service,
+        register an account, connect your app to them and manage online.
+    - Android SDK API documents are basically nonexistent.
+- Read FedML Android SDK codebase because no documentation.
+
+<details>
+<summary>
+The stack of abstraction layers for training from bottom to top.
+
+Found the bottom by searching for `System.loadLibrary`.
+</summary>
+
+- `ai/fedml/edge/nativemobilenn/NativeFedMLClientManager.java`
+    is the binding for MNN, the deep learning library in Cpp.
+- `ai/fedml/edge/service/TrainingExecutor.java`
+    is the higher level API for training.
+- `ai/fedml/edge/service/ClientManager.java`
+    handles both MQTT communication and training.
+    Still has `TODO` comments in it.
+- `ai/fedml/edge/service/ClientAgentManager.java`
+    provides one "documented" method.
+- `ai/fedml/edge/service/FedEdgeTrainImpl.java`
+- `ai/fedml/edge/service/EdgeService.java`
+    is made into a `Service`.
+- `ai/fedml/edge/FedEdgeImpl.java`
+    runs the service using an `Intent`.
+- `ai/fedml/edge/FedEdgeManager.java`
+    > This is the top APIs in FedML Android SDK,
+    > it supports core training engine and related control commands
+    > on your Android devices.
+
+</details>
+
+- Investigated FedML platform lock-in and cloud lock-in.
+
+    Unfortunately, FedML Android SDK forces the users to use open.fedml.ai as a
+    proxy for all MQTT traffic.
+    - Forced MNN on Android
+- Investigated using the same Machine Learning model on different platforms.
+    - [Open Neural Network Exchange (ONNX)][onnx] supports major Machine
+        Learning libraries.
+        - [Deploy ONNX](https://onnxruntime.ai/docs/tutorials/mobile/#develop-the-application)
+        - [Their runtimes](https://onnxruntime.ai)
+        - [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
 
 ## Up till 2023/03/12
 
@@ -236,3 +297,5 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [RxAndroid]: https://github.com/ReactiveX/RxAndroid
 [RxJava]: https://github.com/ReactiveX/RxJava
 [client-server-test-repo]: https://github.com/SichangHe/AndroidClient_django_server_POC
+[fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html
+[onnx]: https://onnx.ai
