@@ -3,6 +3,7 @@
 **Progress**<br>
 Tested the FedAvg single process simulation with the step-by-step example. Including setting up the Python environment with Conda, installing FedML and learned the steps of testing the method to change parameters with YAML file.<br> 
 Started running other examples provided that implements logistic regression with MINST dataset<br>
+Finished a video that introduces FL and FedAvg https://www.youtube.com/watch?v=HDTdgn3IZw4&t=259s<br>
 		
 
 **To dos**<br>
