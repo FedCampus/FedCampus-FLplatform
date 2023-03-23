@@ -100,10 +100,11 @@ Found the bottom by searching for `System.loadLibrary`.
         - [Deploy ONNX](https://onnxruntime.ai/docs/tutorials/mobile/#develop-the-application)
         - [Their runtimes](https://onnxruntime.ai)
         - [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
-
-            Walked through this one.
-            The resulting models are small, and the process easy.
-            But, the parameters are rather hidden inside the model.
+            - The resulting models are small, and the process easy.
+            - The parameters are hidden inside the model.
+            - The training is done on Python, only inference is done on Android.
+            - [Gather the common statistics from the ONNX models](https://github.com/microsoft/onnxruntime/issues/1820)
+            - [How do you find the quantization parameter inside of the ONNX model resulted in converting already quantized tflite model to ONNX?](https://stackoverflow.com/questions/74229713/how-do-you-find-the-quantization-parameter-inside-of-the-onnx-model-resulted-in)
 
 ## Up till 2023/03/12
 
