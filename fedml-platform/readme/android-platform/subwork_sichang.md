@@ -101,6 +101,10 @@ Found the bottom by searching for `System.loadLibrary`.
         - [Their runtimes](https://onnxruntime.ai)
         - [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
 
+            Walked through this one.
+            The resulting models are small, and the process easy.
+            But, the parameters are rather hidden inside the model.
+
 ## Up till 2023/03/12
 
 - Tried Retrofit and made blocking GET request not in strict mode.
