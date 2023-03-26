@@ -40,6 +40,14 @@
 
 ## TODOs
 
+- [ ] Sketch POC of the whole structure without on-device training.
+
+<details>
+<summary>
+Not possible with onnxruntime because mobile training is not supported, yet.
+Would need a mobile framework.
+</summary>
+
 - [ ] ONNX-based FL demo.
     - [ ] Android client running ONNX runtime.
         When fake local data are generated,
@@ -50,6 +58,7 @@
         Receive parameters each round and average them.
         Send clients new parameters when asked.
     - [ ] Communication using HTTP.
+</details>
 
 ## Up till now
 
@@ -105,6 +114,9 @@ Found the bottom by searching for `System.loadLibrary`.
             - The training is done on Python, only inference is done on Android.
             - [Gather the common statistics from the ONNX models](https://github.com/microsoft/onnxruntime/issues/1820)
             - [How do you find the quantization parameter inside of the ONNX model resulted in converting already quantized tflite model to ONNX?](https://stackoverflow.com/questions/74229713/how-do-you-find-the-quantization-parameter-inside-of-the-onnx-model-resulted-in)
+        - onnxruntime cannot train on mobile currently 😢: [ONNX Runtime Mobile Training
+            (Android/iOS)](https://github.com/microsoft/onnxruntime/issues/11098).
+            We would have to use a mobile framework anyway.
 
 ## Up till 2023/03/12
 
