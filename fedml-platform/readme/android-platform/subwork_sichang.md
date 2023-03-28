@@ -62,6 +62,11 @@ Would need a mobile framework.
 
 ## Up till now
 
+- MQTT client on Django connecting to Johnny's deployed broker following
+    [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django).
+
+## Up till 2023/03/27
+
 - Studied [FedML Android demo][fedml-android-demo].
     - Requires manually cloning MNN and configuring Cpp toolchain to build.
     - Uses JNI to call Cpp function from Java.
