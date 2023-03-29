@@ -58,12 +58,16 @@ Would need a mobile framework.
         Receive parameters each round and average them.
         Send clients new parameters when asked.
     - [ ] Communication using HTTP.
+
 </details>
 
 ## Up till now
 
-- MQTT client on Django connecting to Johnny's deployed broker following
-    [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django).
+- [Repo: Android MQTT Django POC](https://github.com/SichangHe/Android_MQTT_django_POC)
+    - MQTT client on Django connecting to Johnny's deployed broker following
+        [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django).
+    - MQTT client on Android following [example in
+        eclipse/paho.mqtt.java](https://github.com/eclipse/paho.mqtt.java/blob/f4e0db802a4433645ef011e711646a09ec9fae89/org.eclipse.paho.sample.mqttv3app/src/main/java/org/eclipse/paho/sample/mqttv3app/Sample.java#L50).
 
 ## Up till 2023/03/27
 
