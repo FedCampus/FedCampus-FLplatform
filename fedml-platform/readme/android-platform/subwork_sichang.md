@@ -40,8 +40,6 @@
 
 ## TODOs
 
-- [ ] Sketch POC of the whole structure without on-device training.
-
 <details>
 <summary>
 Not possible with onnxruntime because mobile training is not supported, yet.
@@ -64,10 +62,14 @@ Would need a mobile framework.
 ## Up till now
 
 - [Repo: Android MQTT Django POC](https://github.com/SichangHe/Android_MQTT_django_POC)
+
+    Sketch POC of the whole structure without on-device training.
     - MQTT client on Django connecting to Johnny's deployed broker following
         [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django).
     - MQTT client on Android following [example in
         eclipse/paho.mqtt.java](https://github.com/eclipse/paho.mqtt.java/blob/f4e0db802a4433645ef011e711646a09ec9fae89/org.eclipse.paho.sample.mqttv3app/src/main/java/org/eclipse/paho/sample/mqttv3app/Sample.java#L50).
+        - Subscribe to topic.
+        - Publish content in EditText input box.
 
 ## Up till 2023/03/27
 
