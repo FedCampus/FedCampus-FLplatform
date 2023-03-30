@@ -40,6 +40,11 @@
 
 ## TODOs
 
+- [ ] Try out mobile machine learning frameworks and choose one.
+- [ ] MNN
+- [ ] TensorFlow Lite
+- [ ] Pytorch Mobile
+
 <details>
 <summary>
 Not possible with onnxruntime because mobile training is not supported, yet.
