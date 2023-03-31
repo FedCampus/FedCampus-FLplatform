@@ -75,6 +75,16 @@ Would need a mobile framework.
         eclipse/paho.mqtt.java](https://github.com/eclipse/paho.mqtt.java/blob/f4e0db802a4433645ef011e711646a09ec9fae89/org.eclipse.paho.sample.mqttv3app/src/main/java/org/eclipse/paho/sample/mqttv3app/Sample.java#L50).
         - Subscribe to topic.
         - Publish content in EditText input box.
+- Looked up mobile ML framework comparisons.
+    - Tensorflow Lite was benchmarked to be a few times faster than PyTorch Mobile.
+        [Comparison and Benchmarking of AI Models and Frameworks on Mobile Devices](https://arxiv.org/pdf/2005.05085.pdf).
+    - [A Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices](https://xumengwei.github.io/files/WWW22-MobileDLLibs.pdf):
+        - No clear winner on neither CPU nor GPU. ncnn is generally fastest.
+        - PyTorch Mobile did not have GPU support.
+    - [On-Device Deep Learning: PyTorch Mobile and TensorFlow Lite](https://www.kdnuggets.com/2021/11/on-device-deep-learning-pytorch-mobile-tensorflow-lite.html):
+        - PyTorch Mobile and PyTorch share codebase, no conversion problem.
+        - TFLite and Tensorflow are difference codebase,
+            use care when choosing operators for models.
 
 ## Up till 2023/03/27
 
