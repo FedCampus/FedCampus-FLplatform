@@ -41,7 +41,10 @@
 ## TODOs
 
 - [ ] Try out mobile machine learning frameworks and choose one.
-- [ ] MNN
+- [x] MNN
+
+    Their Android demo is extremely old, buggy, and does not work.
+    The setup is long but simple.
 - [ ] TensorFlow Lite
 - [ ] Pytorch Mobile
 
