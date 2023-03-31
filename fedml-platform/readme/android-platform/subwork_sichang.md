@@ -46,7 +46,10 @@
     Their Android demo is extremely old, buggy, and does not work.
     The setup is long but simple.
 - [ ] TensorFlow Lite
-- [ ] Pytorch Mobile
+- [x] Pytorch Mobile
+    - Android demo also very old, but does work.
+    - Updating their package works.
+    - No on-device training support found.
 
 <details>
 <summary>
