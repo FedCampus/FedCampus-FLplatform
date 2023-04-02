@@ -40,25 +40,6 @@
 
 ## TODOs
 
-- [x] Try out mobile machine learning frameworks and choose one.
-- [x] MNN
-
-    Their Android demo is extremely old, buggy, and does not work.
-    The setup is long but simple.
-- [x] TensorFlow Lite
-    - [Outdated tutorial](https://www.tensorflow.org/lite/examples/on_device_training/overview).
-        - The basics have not changed, though.
-    - [Up-to-date example](https://github.com/SichangHe/tensorflow--examples/tree/master/lite/examples/model_personalization/android).
-        - Updated last week.
-        - Builds and runs out of the box.
-        - Uses Kotlin.
-        - Lots of ceremonies doing simple things (1000 lines of Kotlin).
-        - Training code is simple (at TransferLearningHelper.kt:training)
-- [x] Pytorch Mobile
-    - Android demo also very old, but does work.
-    - Updating their package works.
-    - No on-device training support found.
-
 <details>
 <summary>
 Not possible with onnxruntime because mobile training is not supported, yet.
@@ -99,6 +80,28 @@ Would need a mobile framework.
         - PyTorch Mobile and PyTorch share codebase, no conversion problem.
         - TFLite and Tensorflow are difference codebase,
             use care when choosing operators for models.
+- Tried out mobile machine learning frameworks.
+    - MNN
+
+        Their Android demo is extremely old, buggy, and does not work.
+        The setup is long but simple.
+    - TensorFlow Lite
+        - [Outdated tutorial](https://www.tensorflow.org/lite/examples/on_device_training/overview).
+            - The basics have not changed, though.
+        - [Up-to-date example](https://github.com/SichangHe/tensorflow--examples/tree/master/lite/examples/model_personalization/android).
+            - Updated last week.
+            - Builds and runs out of the box.
+            - Uses Kotlin.
+            - Lots of ceremonies doing simple things (1000 lines of Kotlin).
+            - Training code is simple (at TransferLearningHelper.kt:training)
+    - Pytorch Mobile
+        - Android demo also very old, but does work.
+        - Updating their package works.
+        - No on-device training support found.
+    - [Flower](https://flower.dev)
+        - Fairly maintained and well documented.
+        - Uses TFLite for Android.
+        - Uses gRPC.
 
 ## Up till 2023/03/27
 
