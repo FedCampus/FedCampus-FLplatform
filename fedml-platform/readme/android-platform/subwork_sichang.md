@@ -40,12 +40,20 @@
 
 ## TODOs
 
-- [ ] Try out mobile machine learning frameworks and choose one.
+- [x] Try out mobile machine learning frameworks and choose one.
 - [x] MNN
 
     Their Android demo is extremely old, buggy, and does not work.
     The setup is long but simple.
-- [ ] TensorFlow Lite
+- [x] TensorFlow Lite
+    - [Outdated tutorial](https://www.tensorflow.org/lite/examples/on_device_training/overview).
+        - The basics have not changed, though.
+    - [Up-to-date example](https://github.com/SichangHe/tensorflow--examples/tree/master/lite/examples/model_personalization/android).
+        - Updated last week.
+        - Builds and runs out of the box.
+        - Uses Kotlin.
+        - Lots of ceremonies doing simple things (1000 lines of Kotlin).
+        - Training code is simple (at TransferLearningHelper.kt:training)
 - [x] Pytorch Mobile
     - Android demo also very old, but does work.
     - Updating their package works.
