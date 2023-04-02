@@ -22,7 +22,7 @@ FedML Research: [https://fedml.ai/research-papers/](https://fedml.ai/research-pa
 
 A blog post introducing our latest progress: [https://medium.com/@FedML/fedml-ai-platform-releases-the-worlds-federated-learning-open-platform-on-public-cloud-with-an-8024e68a70b6](https://medium.com/@FedML/fedml-ai-platform-releases-the-worlds-federated-learning-open-platform-on-public-cloud-with-an-8024e68a70b6)
 
-## Some blogs introducing FedML:
+## Some blogs introducing FedML
 
 FedML Has Upgraded From Open Source Research Library to an Industrialized Platform
 
@@ -49,3 +49,43 @@ FedML Releases Simple and flexible APIs, Boosting Innovation in Algorithm and Sy
 [https://medium.com/@FedML/fedml-releases-simple-and-flexible-apis-boosting-innovation-in-algorithm-and-system-optimization-b21c2f4b88c8](https://medium.com/@FedML/fedml-releases-simple-and-flexible-apis-boosting-innovation-in-algorithm-and-system-optimization-b21c2f4b88c8)
 
 [https://medium.com/@FedML](https://medium.com/@FedML)
+
+## Android Developer Tutorials
+
+[Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
+[Video: Android Development for Beginners](https://www.youtube.com/watch?v=fis26HvvDII)
+[Android Room with a View](https://developer.android.com/codelabs/android-room-with-a-view#0)
+[Background Work with WorkManager](https://developer.android.com/codelabs/android-workmanager-java#0)
+
+### More Android resources
+
+- [FedML Android demo][fedml-android-demo]
+- [javaTpoint](https://www.javatpoint.com/android-tutorial)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
+- [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
+
+<details>
+<summary>Useless resources since we are not going to use Kotlin.</summary>
+
+- [Build your first app](https://developer.android.com/training/basics/firstapp)
+- [Training courses](https://developer.android.com/courses)
+    - [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
+    - [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
+    - [Jetpack Compose for Android developers](https://developer.android.com/courses/jetpack-compose/course)
+    - [Modern Android app architecture](https://developer.android.com/courses/pathways/android-architecture)
+    - [Kotlin coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+- [Connectivity](https://developer.android.com/guide/topics/connectivity)
+- [Testing](https://developer.android.com/training/testing)
+- [Security best practices](https://developer.android.com/topic/security/best-practices)
+
+</details>
+
+## Django REST resources
+
+- [Writing your first Django app, part
+    1](https://docs.djangoproject.com/en/4.0/intro/tutorial01/)
+- [Django REST Framework
+    Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
+- [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
+
+[fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html

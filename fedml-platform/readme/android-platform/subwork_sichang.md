@@ -1,43 +1,5 @@
 # Subwork\_Sichang
 
-## Recommended Android Developer Tutorials
-
-- [x] [Build Your First Android App in Java](https://developer.android.com/codelabs/build-your-first-android-app?hl=en#0)
-- [ ] [Video: Android Development for Beginners](https://www.youtube.com/watch?v=fis26HvvDII)
-- [ ] [Android Room with a View](https://developer.android.com/codelabs/android-room-with-a-view#0)
-- [ ] [Background Work with WorkManager](https://developer.android.com/codelabs/android-workmanager-java#0)
-
-### More Android resources
-
-- [FedML Android demo][fedml-android-demo]
-- [javaTpoint](https://www.javatpoint.com/android-tutorial)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/android-tutorial/)
-- [Codelabs](https://codelabs.developers.google.com/?cat=android&text=android%20java)
-
-<details>
-<summary>Useless resources since we are not going to use Kotlin.</summary>
-
-- [x] [Build your first app](https://developer.android.com/training/basics/firstapp)
-- [ ] [Training courses](https://developer.android.com/courses)
-    - [x] [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
-    - [x] [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
-    - [ ] [Jetpack Compose for Android developers](https://developer.android.com/courses/jetpack-compose/course)
-    - [ ] [Modern Android app architecture](https://developer.android.com/courses/pathways/android-architecture)
-    - [ ] [Kotlin coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-- [ ] [Connectivity](https://developer.android.com/guide/topics/connectivity)
-- [ ] [Testing](https://developer.android.com/training/testing)
-- [ ] [Security best practices](https://developer.android.com/topic/security/best-practices)
-
-</details>
-
-## Recommended Django REST resources
-
-- [Writing your first Django app, part
-    1](https://docs.djangoproject.com/en/4.0/intro/tutorial01/)
-- [Django REST Framework
-    Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
-- [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
-
 ## TODOs
 
 <details>
@@ -336,15 +298,6 @@ For [Push API][Push API], I only found [instruction to make push messages][make-
 My *conclusion* is that we should consider these after we have a working poll model because they involve external services.
 
 </details>
-
-## TODOs for Production
-
-- [ ] Use HTTPS. `manage.py runserver` does not support HTTPS.
-    [DjangoRestFramework HTTPS Links With Routers and
-    Viewsets](https://stackoverflow.com/questions/22279893/djangorestframework-https-links-with-routers-and-viewsets).
-- [ ] Change `baseUrl` in all `Retrofit` instances.
-- [ ] Remove `usesCleartextTraffic` in `AndroidManifest.xml`.
-- [ ] Disallow `ALLOW_HOST` `10.0.2.2` on Django server `settings.py`.
 
 [Push API]: https://developer.mozilla.org/docs/Web/API/Push_API
 [make-push-message]: https://developers.google.com/learn/pathways/pwa-push-notifications
