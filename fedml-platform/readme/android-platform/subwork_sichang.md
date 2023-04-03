@@ -64,6 +64,12 @@ Would need a mobile framework.
         - Fairly maintained and well documented.
         - Uses TFLite for Android.
         - Uses gRPC.
+- Set up two Nova 9 for development.
+    - It is just easier to set the language to English.
+    - Tap `About phone` > `Build number` 7 times to [enter developer mode](https://www.youtube.com/watch?v=UQh9QJXoAOA).
+    - `Developer options` is in `System & updates`.
+        - Need to turn `USB debugging` on.
+            - Need to log in to HUAWEI ID.
 
 ## Up till 2023/03/27
 
