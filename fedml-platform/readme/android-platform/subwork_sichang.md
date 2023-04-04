@@ -62,8 +62,15 @@ Would need a mobile framework.
         - No on-device training support found.
     - [Flower](https://flower.dev)
         - Fairly maintained and well documented.
+        - Worked out of the box.
         - Uses TFLite for Android.
         - Uses gRPC.
+    - FedML
+        - Workflow has to run on FedML servers.
+        - Web GUI based.
+        - Server-side implementation proprietary.
+        - Client require full disk access.
+        - Client only connects to FedML servers both via HTTPS and MQTT.
 - Set up two Nova 9 for development.
     - It is just easier to set the language to English.
     - Tap `About phone` > `Build number` 7 times to [enter developer mode](https://www.youtube.com/watch?v=UQh9QJXoAOA).
