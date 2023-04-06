@@ -2,6 +2,8 @@
 
 ## TODOs
 
+- [ ] Make a POC with `flwr`.
+
 <details>
 <summary>
 Not possible with onnxruntime because mobile training is not supported, yet.
