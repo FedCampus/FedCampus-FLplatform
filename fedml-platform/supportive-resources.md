@@ -88,4 +88,11 @@ FedML Releases Simple and flexible APIs, Boosting Innovation in Algorithm and Sy
     Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
 - [freeCodeCamp.org video](https://www.youtube.com/watch?v=tujhGdn1EMI)
 
+## flower resources
+
+- [Flower How-to guides][flower-how-to]
+- [Flower Summit 2021 | On-Device Federated Training with Flower][on-device-w-flower]
+
 [fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html
+[flower-how-to]: https://flower.dev/docs/#how-to-guides
+[on-device-w-flower]: https://www.youtube.com/watch?v=QJEX5c0y1I8
