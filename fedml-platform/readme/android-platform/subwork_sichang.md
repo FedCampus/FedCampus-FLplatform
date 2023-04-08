@@ -4,26 +4,14 @@
 
 - [ ] Make a POC with `flwr`.
 
-<details>
-<summary>
-Not possible with onnxruntime because mobile training is not supported, yet.
-Would need a mobile framework.
-</summary>
-
-- [ ] ONNX-based FL demo.
-    - [ ] Android client running ONNX runtime.
-        When fake local data are generated,
-        GET server for new parameters and train on fake local data.
-        After training finish,
-        POST server parameter and wait for more fake local data.
-    - [ ] Django server distributing and averaging the received parameters.
-        Receive parameters each round and average them.
-        Send clients new parameters when asked.
-    - [ ] Communication using HTTP.
-
-</details>
-
 ## Up till now
+
+- Study how `flower` works.
+    - The `strategy` handles most custom logic on server side.
+    - Order of connection and training managed/hardcoded.
+        - Start training after connection established.
+        - No resume.
+        - No sleep option.
 
 ## Up till 2023/04/04
 
@@ -36,45 +24,57 @@ Would need a mobile framework.
         eclipse/paho.mqtt.java](https://github.com/eclipse/paho.mqtt.java/blob/f4e0db802a4433645ef011e711646a09ec9fae89/org.eclipse.paho.sample.mqttv3app/src/main/java/org/eclipse/paho/sample/mqttv3app/Sample.java#L50).
         - Subscribe to topic.
         - Publish content in EditText input box.
-- Looked up mobile ML framework comparisons.
-    - Tensorflow Lite was benchmarked to be a few times faster than PyTorch Mobile.
-        [Comparison and Benchmarking of AI Models and Frameworks on Mobile Devices](https://arxiv.org/pdf/2005.05085.pdf).
-    - [A Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices](https://xumengwei.github.io/files/WWW22-MobileDLLibs.pdf):
-        - No clear winner on neither CPU nor GPU. ncnn is generally fastest.
-        - PyTorch Mobile did not have GPU support.
-    - [On-Device Deep Learning: PyTorch Mobile and TensorFlow Lite](https://www.kdnuggets.com/2021/11/on-device-deep-learning-pytorch-mobile-tensorflow-lite.html):
-        - PyTorch Mobile and PyTorch share codebase, no conversion problem.
-        - TFLite and Tensorflow are difference codebase,
-            use care when choosing operators for models.
-- Tried out mobile machine learning frameworks.
-    - MNN
 
-        Their Android demo is extremely old, buggy, and does not work.
-        The setup is long but simple.
-    - TensorFlow Lite
-        - [Outdated tutorial](https://www.tensorflow.org/lite/examples/on_device_training/overview).
-            - The basics have not changed, though.
-        - [Up-to-date example](https://github.com/SichangHe/tensorflow--examples/tree/master/lite/examples/model_personalization/android).
-            - Updated last week.
-            - Builds and runs out of the box.
-            - Uses Kotlin.
-            - Lots of ceremonies doing simple things (1000 lines of Kotlin).
-            - Training code is simple (at TransferLearningHelper.kt:training)
-    - Pytorch Mobile
-        - Android demo also very old, but does work.
-        - Updating their package works.
-        - No on-device training support found.
-    - [Flower](https://flower.dev)
-        - Fairly maintained and well documented.
-        - Worked out of the box.
-        - Uses TFLite for Android.
-        - Uses gRPC.
-    - FedML
-        - Workflow has to run on FedML servers.
-        - Web GUI based.
-        - Server-side implementation proprietary.
-        - Client require full disk access.
-        - Client only connects to FedML servers both via HTTPS and MQTT.
+<details>
+<summary>Looked up mobile ML framework comparisons.</summary>
+
+- Tensorflow Lite was benchmarked to be a few times faster than PyTorch Mobile.
+    [Comparison and Benchmarking of AI Models and Frameworks on Mobile Devices](https://arxiv.org/pdf/2005.05085.pdf).
+- [A Comprehensive Benchmark of Deep Learning Libraries on Mobile Devices](https://xumengwei.github.io/files/WWW22-MobileDLLibs.pdf):
+    - No clear winner on neither CPU nor GPU. ncnn is generally fastest.
+    - PyTorch Mobile did not have GPU support.
+- [On-Device Deep Learning: PyTorch Mobile and TensorFlow Lite](https://www.kdnuggets.com/2021/11/on-device-deep-learning-pytorch-mobile-tensorflow-lite.html):
+    - PyTorch Mobile and PyTorch share codebase, no conversion problem.
+    - TFLite and Tensorflow are difference codebase,
+        use care when choosing operators for models.
+
+</details>
+
+- Tried out [Flower](https://flower.dev)
+    - Fairly maintained and well documented.
+    - Worked out of the box.
+    - Uses TFLite for Android.
+    - Uses gRPC.
+
+<details>
+<summary>Tried out other mobile machine learning frameworks.</summary>
+
+- MNN
+
+    Their Android demo is extremely old, buggy, and does not work.
+    The setup is long but simple.
+- TensorFlow Lite
+    - [Outdated tutorial](https://www.tensorflow.org/lite/examples/on_device_training/overview).
+        - The basics have not changed, though.
+    - [Up-to-date example](https://github.com/SichangHe/tensorflow--examples/tree/master/lite/examples/model_personalization/android).
+        - Updated last week.
+        - Builds and runs out of the box.
+        - Uses Kotlin.
+        - Lots of ceremonies doing simple things (1000 lines of Kotlin).
+        - Training code is simple (at TransferLearningHelper.kt:training)
+- Pytorch Mobile
+    - Android demo also very old, but does work.
+    - Updating their package works.
+    - No on-device training support found.
+- FedML
+    - Workflow has to run on FedML servers.
+    - Web GUI based.
+    - Server-side implementation proprietary.
+    - Client require full disk access.
+    - Client only connects to FedML servers both via HTTPS and MQTT.
+
+</details>
+
 - Set up two Nova 9 for development.
     - It is just easier to set the language to English.
     - Tap `About phone` > `Build number` 7 times to [enter developer mode](https://www.youtube.com/watch?v=UQh9QJXoAOA).
@@ -125,20 +125,28 @@ Found the bottom by searching for `System.loadLibrary`.
     Unfortunately, FedML Android SDK forces the users to use open.fedml.ai as a
     proxy for all MQTT traffic.
     - Forced MNN on Android
-- Investigated using the same Machine Learning model on different platforms.
-    - [Open Neural Network Exchange (ONNX)][onnx] supports major Machine
-        Learning libraries.
-        - [Deploy ONNX](https://onnxruntime.ai/docs/tutorials/mobile/#develop-the-application)
-        - [Their runtimes](https://onnxruntime.ai)
-        - [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
-            - The resulting models are small, and the process easy.
-            - The parameters are hidden inside the model.
-            - The training is done on Python, only inference is done on Android.
-            - [Gather the common statistics from the ONNX models](https://github.com/microsoft/onnxruntime/issues/1820)
-            - [How do you find the quantization parameter inside of the ONNX model resulted in converting already quantized tflite model to ONNX?](https://stackoverflow.com/questions/74229713/how-do-you-find-the-quantization-parameter-inside-of-the-onnx-model-resulted-in)
-        - onnxruntime cannot train on mobile currently 😢: [ONNX Runtime Mobile Training
-            (Android/iOS)](https://github.com/microsoft/onnxruntime/issues/11098).
-            We would have to use a mobile framework anyway.
+
+<details>
+<summary>
+Investigated using the same Machine Learning model on different platforms.
+</summary>
+
+[Open Neural Network Exchange (ONNX)][onnx] supports major Machine
+Learning libraries.
+
+- [Deploy ONNX](https://onnxruntime.ai/docs/tutorials/mobile/#develop-the-application)
+- [Their runtimes](https://onnxruntime.ai)
+- [Deploying Scikit-Learn Models In Android Apps With ONNX](https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab)
+    - The resulting models are small, and the process easy.
+    - The parameters are hidden inside the model.
+    - The training is done on Python, only inference is done on Android.
+    - [Gather the common statistics from the ONNX models](https://github.com/microsoft/onnxruntime/issues/1820)
+    - [How do you find the quantization parameter inside of the ONNX model resulted in converting already quantized tflite model to ONNX?](https://stackoverflow.com/questions/74229713/how-do-you-find-the-quantization-parameter-inside-of-the-onnx-model-resulted-in)
+- onnxruntime cannot train on mobile currently 😢: [ONNX Runtime Mobile Training
+    (Android/iOS)](https://github.com/microsoft/onnxruntime/issues/11098).
+    We would have to use a mobile framework anyway.
+
+</details>
 
 ## Up till 2023/03/12
 
