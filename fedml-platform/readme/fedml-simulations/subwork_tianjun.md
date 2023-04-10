@@ -14,7 +14,7 @@ Different epochs
 
 With limit local updates, it does not need to manually set the epochs 
 
-$3.$ Rebuild the anaconda, now FedML simulations can be run on my own computer; Flower installed
+$3.$ Rebuild the anaconda, now FedML simulations can be run on my own computer; Flower installed (Spend some time on it)
 
 ### ~ 4/6
 
