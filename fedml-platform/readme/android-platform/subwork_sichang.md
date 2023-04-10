@@ -13,6 +13,31 @@
         - No resume.
         - No sleep option.
 
+<details>
+<summary>Stack of abstractions for Flower Android demo.</summary>
+
+Server.
+
+- `GrpcBridge` in `server/grpc_server/grpc_bridge.py`, `common/serde`.
+- `GrpcClientProxy(ClientProxy)` in `server/grpc_server/grpc_client_proxy.py`.
+- `fit_client` in `server/server.py`.
+- `Server` in `server/server.py`.
+- `run_server` in `server/app.py`.
+
+gRPC server.
+
+- `FlowerServiceServicer(transport_pb2_grpc.FlowerServiceServicer)`
+    in `server/grpc_server/flower_service_servicer.py`.
+- `start_grpc_server` in `server/grpc_server/grpc_server.py`.
+
+Android client gRPC client.
+
+- `FlowerServiceGrpc` defined in `proto/transport.proto`.
+- `FlowerServiceRunnable`.
+- `runGrpc`.
+
+</details>
+
 ## Up till 2023/04/04
 
 - [Repo: Android MQTT Django POC](https://github.com/SichangHe/Android_MQTT_django_POC)
