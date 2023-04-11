@@ -4,7 +4,6 @@
 
 * [Project Overview](README.md)
   * [FedML simulations](fedml-platform/project-overview/fedml-simulations/README.md)
-    * [Subwork\_Rongfan](fedml-platform/project-overview/fedml-simulations/subwork-Rongfan.md)
     * [Subwork\_Tianxuan](fedml-platform/readme/fedml-simulations/subwork\_tianxuan.md)
     * [Subwork\_Tianjun](fedml-platform/readme/fedml-simulations/subwork\_tianjun.md)
   * [Subwork-template](fedml-platform/project-overview/subwork-template.md)
