@@ -6,7 +6,7 @@
   * [FedML simulations](fedml-platform/project-overview/fedml-simulations/README.md)
     * [Subwork\_Tianxuan](fedml-platform/readme/fedml-simulations/subwork\_tianxuan.md)
     * [Subwork\_Tianjun](fedml-platform/readme/fedml-simulations/subwork\_tianjun.md)
-    * [Subwork\_Tianjun](fedml-platform/readme/fedml-simulations/subwork\_aicha.md)
+    * [Subwork\_Aicha](fedml-platform/readme/fedml-simulations/subwork\_aicha.md)
   * [Subwork-template](fedml-platform/project-overview/subwork-template.md)
   * [Android Platform](fedml-platform/readme/android-platform/README.md)
     * [Subwork\_Sichang](fedml-platform/readme/android-platform/subwork\_sichang.md)
