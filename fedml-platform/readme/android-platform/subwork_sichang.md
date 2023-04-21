@@ -6,6 +6,23 @@
 
 ## Up till now
 
+- `flower` uses `protobuf` to *generate* language-specific gRPC stub code.
+- In Android example, the TFLite model is hard-coded:
+    - Data parsing functions have data semantics hard-coded and
+        and run at data load.
+    - No encoded way to transfer model (`.tflite`) files.
+    - The TFLite API used (`TransferLearningModel`) is model-agnostic.
+        Potential to easily swap models.
+- Consider an extra connection layer in front of `flower`.
+    - `flower` has sophisticated gRPC configuration—hard to fiddle with.
+    - Keeping `flower` contained and in one piece is beneficial for future
+        compatibility.
+    - Can use Django to spawn flower servers and reverse proxy to them.
+    - Consider using Django to spawn flower servers on new ports,
+        and tell clients to connect to them at the ports.
+
+## Up till 2023/04/10
+
 - Study how `flower` works.
     - The `strategy` handles most custom logic on server side.
     - Order of connection and training managed/hardcoded.
