@@ -6,6 +6,12 @@
 
 ## Up till now
 
+- Started [dyn_flower_android_drf](https://github.com/SichangHe/dyn_flower_android_drf)
+    - Django REST server serve TFLite model files and their information.
+    - Android client ask for TFLite model files.
+
+## Up till 2023/4/21
+
 - `flower` uses `protobuf` to *generate* language-specific gRPC stub code.
 - In Android example, the TFLite model is hard-coded:
     - Data parsing functions have data semantics hard-coded and
