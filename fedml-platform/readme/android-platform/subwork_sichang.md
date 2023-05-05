@@ -8,7 +8,7 @@
 
 - Started [dyn_flower_android_drf](https://github.com/SichangHe/dyn_flower_android_drf)
     - Django REST server serve TFLite model files and their information.
-    - Android client ask for TFLite model files.
+    - Android client ask for TFLite model files and download them.
 
 ## Up till 2023/4/21
 
