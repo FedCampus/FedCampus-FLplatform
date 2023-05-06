@@ -8,7 +8,10 @@
 
 - Started [dyn_flower_android_drf](https://github.com/SichangHe/dyn_flower_android_drf)
     - Django REST server serve TFLite model files and their information.
-    - Android client ask for TFLite model files and download them.
+    - Android client ask for TFLite model files, download them onto disk,
+        and start `FlowerClient` using the model downloaded.
+        - Implemented to load model anywhere on disk instead of in `assets/`:
+            `org/tensorflow/lite/examples/transfer/api/ExternalModelLoader.kt`.
 
 ## Up till 2023/4/21
 
