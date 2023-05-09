@@ -3,6 +3,8 @@
 ## TODOs
 
 - [ ] Make a POC with `flwr`.
+    - [ ] Figure out how to use multiple ports with Johnny.
+    - [ ] Set up Django background tasks with Beilong.
 
 ## Up till now
 
