@@ -4,7 +4,6 @@
 
 - [ ] Make a POC with `flwr`.
     - [ ] Figure out how to use multiple ports with Johnny.
-    - [ ] Set up Django background tasks with Beilong.
 
 ## Up till now
 
@@ -14,6 +13,9 @@
         and start `FlowerClient` using the model downloaded.
         - Implemented to load model anywhere on disk instead of in `assets/`:
             `org/tensorflow/lite/examples/transfer/api/ExternalModelLoader.kt`.
+    - Django server launch Flower server in background process.
+        - Studied Selery, Huey, and APScheduler, and landed on using
+            `multiprocessing` directly.
 
 ## Up till 2023/4/21
 
