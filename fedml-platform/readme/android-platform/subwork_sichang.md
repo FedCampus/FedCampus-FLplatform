@@ -4,6 +4,9 @@
 
 - [ ] Make a POC with `flwr`.
     - [ ] Figure out how to use multiple ports with Johnny.
+    - [ ] Save state in DB.
+    - [ ] Check if the models are already downloaded to prevent redownloading.
+    - [ ] Convert to SDK.
 
 ## Up till now
 
