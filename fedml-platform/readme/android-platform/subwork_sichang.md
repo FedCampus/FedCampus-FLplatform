@@ -19,6 +19,12 @@
     - Django server launch Flower server in background process.
         - Studied Selery, Huey, and APScheduler, and landed on using
             `multiprocessing` directly.
+    - Tried saving model parameters in the background Flower process using a
+        custom `Strategy`, but it does not work because
+        `django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.`.
+    - Spawn a new process for each server requested,
+        spawn a thread to monitor it so that it could save the parameters
+        to DB.
 
 ## Up till 2023/4/21
 
