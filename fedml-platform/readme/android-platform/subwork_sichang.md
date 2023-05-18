@@ -4,7 +4,6 @@
 
 - [ ] Make a POC with `flwr`.
     - [ ] Figure out how to use multiple ports with Johnny.
-    - [ ] Save state in DB.
     - [ ] Check if the models are already downloaded to prevent redownloading.
     - [ ] Convert to SDK.
 
@@ -22,9 +21,10 @@
     - Tried saving model parameters in the background Flower process using a
         custom `Strategy`, but it does not work because
         `django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.`.
-    - Spawn a new process for each server requested,
-        spawn a thread to monitor it so that it could save the parameters
-        to DB.
+    - Spawn a new process for each server requested.
+        - Spawn a thread to monitor it so that it could save the parameters
+            to DB.
+        - Restore old parameters from DB at Flower server start.
 
 ## Up till 2023/4/21
 
