@@ -26,15 +26,31 @@ These are just a few examples of the many ways that federated learning can be us
 
 ## Process Overview
 
-| Timeline            | Subworks                                                                               | Contributors        | Progress |
-| ------------------- | -------------------------------------------------------------------------------------- | ------------------- | -------- |
-|                     | [Subwork Template](fedml-platform/project-overview/subwork-template.md)                |                     | 100/100  |
-| During Semester     | Pre-requisite: [FedML simulations](fedml-platform/project-overview/fedml-simulations/) | All                 | --       |
-| During Semester     | Pre-requisite: Simulation Implementation with Different Experimental Settings          | All                 | 0/100    |
-| 1st month (Summer)  | Deployment on Android (data access, platform management and training stability)        | He Sichang          | 0/100    |
-| 1 month (Summer)    | Implementation of Additional algorithms (Simulation)                                   | Aicha, Yuan Tianjun | 0/100    |
-| 1\~2 month (Summer) | On-device algorithms implementation, analysis                                          | Aicha, Yuan Tianjun |          |
-| Before summer ends  | Test platform, on-device FL applications                                               | ALL                 | 0/100    |
+| Person              | Work                                                                                                                                                     | Time Due                                           |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Steven              | Platform setup, handling FL system setup on Flower                                                                                                       | By the End of May                                  |
+| Johnny              | Manage Devices All in one, IoTs, wearable devices, Mobile phones, etc.                                                                                   | By the End of May                                  |
+| Steven, Johnny      | <p>Design for Cost-efficiency FL Platform<br>Scalability<br>Reliability [FL pipeline]<br>Evaluation and Testing: Experiments on platform performance</p> | By the End of Summer                               |
+| Aicha, Yuan Tianjun | Select an FL task and implement it on FL simulation                                                                                                      | By the Mid of June (FL task)                       |
+| Aicha, Yuan Tianjun | Model training & deployment \[Experiment Analysis: evaluate on-device training with system heterogeneity]                                                | By the End of Summer (Model training & deployment) |
+
+### Timelines & Plans -- System
+
+* Steven: Platform setup, handling FL system setup on Flower... (By the End of May)
+* Steven & Johnny _(By the End of Summer)_
+  * Design for **Cost-efficiency FL Platform** & Manage Devices
+    * Other devices, all in one platform, e.g. IoT devices, etc.
+  * (Scalability) e.g. increasing amount of data and traffic.
+  * (Reliability) e.g. train and deploy models quickly and efficiently. \[_FL pipeline_]
+  * Evaluation and Testing: Experiments on platform performance, e.g. latency, scalability, reliability, etc.
+
+### Timelines & Plans -- Algorithms
+
+* Aicha & Yuan Tianjun:
+  * FL tasks -- Select a task, e.g. sleep tracking, etc., and implement it on FL simulation. _(By the Mid of June)_
+  * Model training & deployment... (**Experiment Analysis**: evaluate on-device training with system heterogeneity ) _(By the End of Summer)_
+* Tang Beilong
+  * Privacy techniques: e.g. differential privacy, etc. _(By the End of Summer)_
 
 ## Evaluation
 
