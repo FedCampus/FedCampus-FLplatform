@@ -7,9 +7,9 @@ https://www.stat.cmu.edu/~ryantibs/convexopt-F18/scribes/Lecture_9.pdf;
 https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week4/gradient_descent/?activate_block_id=block-v1%3AMITx%2B6.036%2B1T2019%2Btype%40sequential%2Bblock%40gradient_descent
 
 
-##Summer
-* 22/5
+## Summer
 
-After reading the paper above, I realised I still need to refine my knowledge in deep learning. So I started this course in DL http://introtodeeplearning.com/. I plan to finish it this week.
-So far, I've watched the first lecture.
+* ToDo Week of 22/5
+- refine my knowledge in Deep Learning: finish this class  http://introtodeeplearning.com/
+- test and run simulations on Setven's work
 
