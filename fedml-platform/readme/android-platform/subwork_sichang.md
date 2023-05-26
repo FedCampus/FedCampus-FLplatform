@@ -5,17 +5,18 @@
 - [ ] Make a POC with `flwr`.
     - [ ] Figure out how to use multiple ports with Johnny.
     - [ ] Check if the models are already downloaded to prevent redownloading.
-    - [ ] Convert to SDK.
+    - [ ] Server: smart scheduling.
 
 ## Up till now
 
-- meet with Aicha to overview `dyn_flower_android` and the customizations it
+- Meet with Aicha to overview `dyn_flower_android` and the customizations it
     provides for her federated learning.
 - [`dyn_flower_android` client side](https://github.com/FedCampus/dyn_flower_android_drf/pull/4):
-    - Extract training functionality from `MainActivity` into
-        `flwr.android_client.train` to work towards a standalone library.
     - Convert `flwr.android_client` from Java to Kotlin and use suspend
         functions.
+    - Extract training functionality from `MainActivity` into
+        `org.eu.fedcampus.train` to work towards a standalone library.
+    - Upgraded `org.tensorflow:tensorflow-lite` dependency.
 - `FedCampus_APP`:
     - [Discuss the need for better commit messages](https://github.com/FedCampus/FedCampus_APP/issues/4).
     - [Discuss Kotlin support](https://github.com/FedCampus/FedCampus_APP/issues/3).
