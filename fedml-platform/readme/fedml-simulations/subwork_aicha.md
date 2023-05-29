@@ -14,5 +14,6 @@ ToDo Week of 22/5
 - test and run simulations on Setven's work
 
 ToDo Week of 29/5
--- 
+- FL tasks : Select sleep tracking and implement it on FL simulation. 
+- details to be added later as I read papers and learn about this task
 
