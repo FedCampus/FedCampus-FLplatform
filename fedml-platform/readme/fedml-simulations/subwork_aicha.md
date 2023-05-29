@@ -9,7 +9,10 @@ https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/coursewa
 
 ## Summer
 
-* ToDo Week of 22/5
+ToDo Week of 22/5
 - refine my knowledge in Deep Learning: finish this class  http://introtodeeplearning.com/
 - test and run simulations on Setven's work
+
+ToDo Week of 29/5
+-- 
 
