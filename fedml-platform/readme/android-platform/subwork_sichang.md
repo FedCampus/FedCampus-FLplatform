@@ -4,7 +4,6 @@
 
 - [ ] Make a POC with `flwr`.
     - [ ] Figure out how to use multiple ports with Johnny.
-    - [ ] Check if the models are already downloaded to prevent redownloading.
     - [ ] Server: smart scheduling.
 
 ## Up till now
@@ -17,6 +16,11 @@
     - Extract training functionality from `MainActivity` into
         `org.eu.fedcampus.train` to work towards a standalone library.
     - Upgraded `org.tensorflow:tensorflow-lite` dependency.
+    - DB using [Room](https://developer.android.com/training/data-storage/room#kotlin).
+        - Check if the models are already downloaded to prevent redownloading.
+        - Restore user input on launch.
+            - Needed [Room migration](https://developer.android.com/training/data-storage/room/migrating-db-versions).
+            - Also needed to [store schema](https://stackoverflow.com/questions/44322178/room-schema-export-directory-is-not-provided-to-the-annotation-processor-so-we).
 - `FedCampus_APP`:
     - [Discuss the need for better commit messages](https://github.com/FedCampus/FedCampus_APP/issues/4).
     - [Discuss Kotlin support](https://github.com/FedCampus/FedCampus_APP/issues/3).
