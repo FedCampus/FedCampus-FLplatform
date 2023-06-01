@@ -2,14 +2,21 @@
 
 ## TODOs
 
+- [ ] HealthKit FedCampus_APP: integrate training package w/ Beilong.
 - [ ] Make a POC with `flwr`.
-    - [ ] Figure out how to use multiple ports with Johnny.
+    - [ ] Deploy w/ Johnny.
+        - [ ] Figure out how to use multiple ports.
+        - [ ] Static file (`.tflite`) serving.
     - [ ] Server: smart scheduling.
 
 ## Up till now
 
 - Meet with Aicha to overview `dyn_flower_android` and the customizations it
     provides for her federated learning.
+    - Walk Aicha through the demo and the logic of the process.
+
+## Up till 2023/5/26
+
 - [`dyn_flower_android` client side](https://github.com/FedCampus/dyn_flower_android_drf/pull/4):
     - Convert `flwr.android_client` from Java to Kotlin and use suspend
         functions.
