@@ -4,8 +4,10 @@
 
 - [ ] HealthKit FedCampus_APP: integrate training package w/ Beilong.
 - [ ] Make a POC with `flwr`.
-    - [ ] Deploy w/ Johnny.
-        - [ ] Figure out how to use multiple ports.
+    - [ ] Test deploy w/ Johnny.
+        - [ ] Map multiple ports to different subdomains.
+        - [ ] HTTPS for backend server.
+        - [ ] SSL for Flower server.
         - [ ] Static file (`.tflite`) serving.
     - [ ] Server: smart scheduling.
 
@@ -14,6 +16,7 @@
 - Meet with Aicha to overview `dyn_flower_android` and the customizations it
     provides for her federated learning.
     - Walk Aicha through the demo and the logic of the process.
+- Meet with Johnny & Tianjun to specify deployment tasks.
 
 ## Up till 2023/5/26
 
