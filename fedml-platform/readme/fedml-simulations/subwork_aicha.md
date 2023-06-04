@@ -18,7 +18,9 @@ ToDo Week of 29/5
 - details to be added later as I read papers and learn about this task
 -> chosed paper: FedMCRNN: Federated Learning using Multiple Convolutional Recurrent Neural Networks for Sleep Quality Prediction
 https://dl.acm.org/doi/10.1145/3512731.3534207
-used data: https://datasets.simula.no/pmdata/
+used data: https://datasets.simula.no/pmdata/; paper: https://dl.acm.org/doi/10.1145/3339825.3394926
+
+
 
 ToDo Week 6/5
 - Finish the implemention of sleep tracking. Simulate the paper mentioned above.
