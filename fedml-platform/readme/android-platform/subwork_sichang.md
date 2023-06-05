@@ -17,6 +17,11 @@
     provides for her federated learning.
     - Walk Aicha through the demo and the logic of the process.
 - Meet with Johnny & Tianjun to specify deployment tasks.
+- Integrating training package into FedCampus_APP with Beilong.
+    - Created [MonoRepo][MonoRepo] to group FedCampus_APP and
+        dyn_flower_android_drf together.
+    - [Imported org.eu.fedcampus.train from dyn_flower_android_drf into
+        FedCampus_APP](https://github.com/FedCampus/FedCampus_APP/commit/68a3444aa9e5ef4d4ab1e300beaf8b0f37e6010c).
 
 ## Up till 2023/5/26
 
@@ -438,4 +443,5 @@ My *conclusion* is that we should consider these after we have a working poll mo
 [RxJava]: https://github.com/ReactiveX/RxJava
 [client-server-test-repo]: https://github.com/SichangHe/AndroidClient_django_server_POC
 [fedml-android-demo]: https://doc.fedml.ai/cross-device/examples/cross_device_android_example.html
+[MonoRepo]: https://github.com/FedCampus/MonoRepo
 [onnx]: https://onnx.ai
