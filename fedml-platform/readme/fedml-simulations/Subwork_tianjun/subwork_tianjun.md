@@ -9,7 +9,7 @@ Subwork_Tianjun
 
 #### Progress
 
--   Meet with Prof. Luo, Jiaqi & Aicha, Steven & Johnny.
+-   Meet with Prof. Luo, Jiaqi & Aicha, Steven & Johnny, Beilong.
 
 -   Briefly read two papers
 
