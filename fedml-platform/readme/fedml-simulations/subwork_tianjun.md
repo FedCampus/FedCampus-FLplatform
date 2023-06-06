@@ -20,10 +20,9 @@
 
 - Read the projects Jiaqi gave me. 
   - I will open up new `md` files to record my notes/understanding for those projects/papers.
-
+- Start to implement code.
 - Continue learning ml/dl.
   - Prof. Luo suggests me to spend some of my time on it.
-- Start to implement code.
 
 ### To 4/14
 
