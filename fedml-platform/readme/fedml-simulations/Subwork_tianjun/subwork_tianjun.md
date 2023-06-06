@@ -3,7 +3,7 @@ Subwork_Tianjun
 
 ### To 6/6
 
--   Read and record [*Communication-Efficient Learning of Deep Networks from Decentralized Data*](Paper\_notes/Notes Communication-Efficient Learning of Deep Networks from Decentralized Data.md)
+-   Read and record [*Communication-Efficient Learning of Deep Networks from Decentralized Data*](Paper\_notes/Notes\_0.md)
 
 ### To 6/4
 
