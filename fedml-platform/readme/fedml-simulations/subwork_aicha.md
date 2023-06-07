@@ -27,6 +27,7 @@ ToDo Week 6/5
 - Use other algorithms.
 
 Implementation details: 
-  Data Preparation:
+  Data Preparation: Accodring to the paper, only six important activity categories were used to assess sleep quality effectively: calories, distance, sedentary minutes, lightly activity minutes, moderately active minutes, and very active minutes. _I still need to research the reason behind this choice_
+  The used files are .json. So far, I've completed 70% of the cleaning of the data (remove duplicates, modify empty values) of one participant out of 16. The cleaning of the data of all participants are similar. Two participants have incomplete data, so they'll not be considered in the study. After cleaning all the data, the originally sepearte json data files will be merged into a single file for easier manipulation later.
 
 
