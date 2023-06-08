@@ -10,6 +10,7 @@
         - [ ] SSL for Flower server.
         - [ ] Static file (`.tflite`) serving.
     - [ ] Server: smart scheduling.
+    - [ ] Model: simple TFLite model that consumes health data.
 
 ## Up till now
 
@@ -22,6 +23,17 @@
         dyn_flower_android_drf together.
     - [Imported org.eu.fedcampus.train from dyn_flower_android_drf into
         FedCampus_APP](https://github.com/FedCampus/FedCampus_APP/commit/68a3444aa9e5ef4d4ab1e300beaf8b0f37e6010c).
+    - Tested `tflite_convertor/convert_to_tflite.py` to verify that it is still
+        able to generate the 5 `.tflite` files.
+        - Failed to make the script run on my ARM Mac after trying multiple
+            Python and Tensorflow versions.
+        - [Opened an issue on the Flower repo](https://github.com/adap/flower/issues/1911)
+            to address the breakage.
+        - Got it running on Beilong's x86_64 Windows machine.
+- Start to add telemetry to `org.eu.fedcampus.train`.
+    - Togglable using an argument.
+    - Sends client, session, and timing data to backend on training events.
+- Persuaded Beilong to write nice commit messages and format code.
 
 ## Up till 2023/5/26
 
