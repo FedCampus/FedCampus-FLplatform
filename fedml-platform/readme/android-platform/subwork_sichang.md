@@ -11,6 +11,7 @@
         - [ ] Static file (`.tflite`) serving.
     - [ ] Server: smart scheduling.
     - [ ] Model: simple TFLite model that consumes health data.
+- [ ] Simulation and physical benchmark system.
 
 ## Up till now
 
