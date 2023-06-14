@@ -2,7 +2,6 @@
 
 ## TODOs
 
-- [ ] HealthKit FedCampus_APP: integrate training package w/ Beilong.
 - [ ] Make a POC with `flwr`.
     - [ ] Test deploy w/ Johnny.
         - [ ] Map multiple ports to different subdomains.
@@ -10,10 +9,17 @@
         - [ ] SSL for Flower server.
         - [ ] Static file (`.tflite`) serving.
     - [ ] Server: smart scheduling.
-    - [ ] Model: simple TFLite model that consumes health data.
 - [ ] Simulation and physical benchmark system.
 
 ## Up till now
+
+- Integrated `org.eu.fedcampus.train` into `FedCampus_APP`.
+- Silly `simple_health_kit` model that predicts 3 classes of distance from 2
+    input: steps and calories.
+- `dyn_flower_android_drf` tracks `TrainingDataType` and advertise models
+    accordingly.
+
+## Up till 2023/6/8
 
 - Meet with Aicha to overview `dyn_flower_android` and the customizations it
     provides for her federated learning.
