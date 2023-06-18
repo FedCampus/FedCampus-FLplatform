@@ -31,3 +31,18 @@ Implementation details:
   The used files are .json. So far, I've completed 70% of the cleaning of the data (remove duplicates, modify empty values) of one participant out of 16. The cleaning of the data of all participants are similar. Two participants have incomplete data, so they'll not be considered in the study. After cleaning all the data, the originally sepearte json data files will be merged into a single file for easier manipulation later.
 
 
+ToDo Week 6/12
+- Timeseries analysis of the data set/work on data windowing
+- Application of MLP, CNN, and LSTM
+
+- Data Windowing: function that can generate any form of a window by selecting the input width, shift, and output width
+- Data preparation: (70%, 20%, 10%) split for the training, validation, and test sets
+  data is not randomly shuffled before training to ensure that chopping the data into windows of consecutive samples is still possible, and to ensure that the 
+  validation/test results are more realistic, being evaluated on the data collected after the model was trained.
+- Normalization: subtract the mean and divide by the standard deviation of each feature
+
+- Applying MLP, CNN, and LSTM, however, the accuracies are very low.
+
+ToDo Week 6/18
+- Achieve the best accuracy for training
+
