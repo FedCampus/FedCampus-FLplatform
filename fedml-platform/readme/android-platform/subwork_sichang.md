@@ -2,6 +2,9 @@
 
 ## TODOs
 
+- [ ] Federated Analytics with `FedCampus_APP`.
+    - [ ] Send fuzzed data to backend & receive.
+    - [ ] Background scheduling with [WorkManager](https://developer.android.com/guide/background/persistent#reliable).
 - [ ] Make a POC with `flwr`.
     - [ ] Test deploy w/ Johnny.
         - [ ] Map multiple ports to different subdomains.
