@@ -3,7 +3,6 @@
 ## TODOs
 
 - [ ] Federated Analytics with `FedCampus_APP`.
-    - [ ] Send fuzzed data to backend & receive.
     - [ ] Background scheduling with [WorkManager](https://developer.android.com/guide/background/persistent#reliable).
 - [ ] Make a POC with `flwr`.
     - [ ] Test deploy w/ Johnny.
@@ -15,6 +14,31 @@
 - [ ] Simulation and physical benchmark system.
 
 ## Up till now
+
+- Clean up `org.eu.fedcampus.train.Train`'s state w/ sealed class `TrainState`.
+- Feature in `dyn_flower_android_drf` to start training without previously saved
+    parameters.
+
+## Up till 2023/7/3
+
+- Converted Beilong's TFLite on-device regression model training demo and
+    integrated it into `dyn_flower_android_drf`.
+- Grand update to `dyn_flower_android_drf` to use the latest TFLite on-device
+    training following their example.
+    [BREAKING! Replace `transfer_api` with latest TFLite
+    usage](https://github.com/FedCampus/dyn_flower_android_drf/pull/21).
+- Updated `FedCampus_APP` to be synchronized with `dyn_flower_android_drf`.
+    [Match latest `dyn_flower_android_drf`](https://github.com/FedCampus/FedCampus_APP/pull/8).
+
+## Up till 2023/6/21
+
+- Studied Flower simulation in preparation for the benchmark platform.
+- Collaborated with Johnny on the dockerization of `dyn_flower_android_drf`.
+- Collect data fuzzed with `LaplaceMechanism` on `FedCampus_APP` in preparation
+    for Federated Analytics.
+- Studied Android background process.
+
+## Up till 2023/6/14
 
 - Integrated `org.eu.fedcampus.train` into `FedCampus_APP`.
 - Silly `simple_health_kit` model that predicts 3 classes of distance from 2
