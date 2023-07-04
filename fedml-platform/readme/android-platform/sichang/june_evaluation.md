@@ -1,4 +1,4 @@
-# July Evaluation
+# June Evaluation
 
 1. Goal attainment:
    - Summarize the goals and targets you set for yourself at the beginning of the month.
