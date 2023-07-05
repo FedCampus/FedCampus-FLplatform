@@ -9,6 +9,7 @@
   * [Subwork-template](fedml-platform/project-overview/subwork-template.md)
   * [Android Platform](fedml-platform/readme/android-platform/README.md)
     * [Subwork\_Sichang](fedml-platform/readme/android-platform/subwork\_sichang.md)
+        * [June Evaluation](fedml-platform/readme/android-platform/sichang/june_evaluation.md)]
 * [Supportive Resources](fedml-platform/supportive-resources.md)
 
 ## 🔍 Usage
