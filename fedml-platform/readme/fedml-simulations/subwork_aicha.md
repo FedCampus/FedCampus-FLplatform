@@ -49,8 +49,18 @@ ToDo Week 6/18
 
 
 ## June Self-evaluation report
-* Goal Attainment
+* Goal Attainment:
+  
 The original plan for June was to finish implementing a model for the sleep efficiency task for the app by the end of mid-June, and then work on other tasks. However, as my work progressed, this goal seemed far to reach. I ended up spending most of the month working only on sleep efficiency.
 The biggest challenge I faced was the unavailability of open-source papers that tackle the same problem: "sleep efficiency", so I just learned how to implement a model by myself from the ground up. Also, as I was progressing, I wrote down weekly plans but most of the time I didn't finish them because more challenges came up that I wasn't expecting.
-* Skills Development
-First, I started by looking for a dataset and doing data preprocessing. I chose the PMData dataset which was used in a research paper I read. Surprisingly, data preprocessing was time-consuming. It took me a while to finish it because there were different files that needed to be merged together based on the date_time, and making decisions on which data to keep and how to fill out empty cells was also challenging. During this process 
+
+* Skills Development:
+  
+First, I started by looking for a dataset and doing data preprocessing. I chose the PMData dataset which was used in a research paper I read. Surprisingly, data preprocessing was time-consuming. It took me a while to finish it because there were different files that needed to be merged together based on the date_time, and making decisions on which data to keep and how to fill out empty cells was also challenging. During this process, I refined my programming skills and mastered some libraries like Pandas and sklearn. 
+Next, I read this book "Deep Learning with Python" and other online articles to learn more about deep learning. I can say I learned a great deal about DL which helped me work with DL models more confidently. Also, I learned about time-series forecasting which was used in our sleep efficiency task. 
+Later, I started writing models for the previously described task and used KerasTuner for automatic hyperparameter search. KerasTuner was also a new framework I learned about. 
+Overall, I believe that although I didn't produce many concrete results this past month, I learned a ton which can hopefully speed up my work in the future.
+
+* Collaboration and teamwork:
+  
+As each member had a different task to work on, I didn't feel like there was much collaboration in our team, at least for the algorithm team. Most of my work was done individually. However, I liked the weekly group meetings because they gave me a boost of energy and motivation, and I enjoyed learning about other team members' progress.
