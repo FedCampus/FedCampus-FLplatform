@@ -46,3 +46,11 @@ ToDo Week 6/12
 ToDo Week 6/18
 - Achieve the best accuracy for training
 
+
+
+## June Self-evaluation report
+* Goal Attainment
+The original plan for June was to finish implementing a model for the sleep efficiency task for the app by the end of mid-June, and then work on other tasks. However, as my work progressed, this goal seemed far to reach. I ended up spending most of the month working only on sleep efficiency.
+The biggest challenge I faced was the unavailability of open-source papers that tackle the same problem: "sleep efficiency", so I just learned how to implement a model by myself from the ground up. Also, as I was progressing, I wrote down weekly plans but most of the time I didn't finish them because more challenges came up that I wasn't expecting.
+* Skills Development
+First, I started by looking for a dataset and doing data preprocessing. I chose the PMData dataset which was used in a research paper I read. Surprisingly, data preprocessing was time-consuming. It took me a while to finish it because there were different files that needed to be merged together based on the date_time, and making decisions on which data to keep and how to fill out empty cells was also challenging. During this process 
