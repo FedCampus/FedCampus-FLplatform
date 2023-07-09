@@ -1,6 +1,106 @@
 Subwork_Tianjun
 ===============
 
+### To 7/7
+
+- Finish re-split data. Now data are separated by labels.
+- Finish FedRS. 
+- Finish LSTM on Data.
+- Detail result: please see June evaluation.
+
+### To 6/28
+
+- Begin to implement FedRS.
+
+  - It is a straight forward algorithm. When we want to deal with non-iid problem. Suppose each client only has several label types but not all, this softmax builds on decreasing the predicting score for unallocated label types in softmax regression. 
+
+    ```
+    scores[i] *= alpha 
+    	i not in types
+      0 <= alpha <= 1
+    ```
+
+  - The challenges are:
+
+    - Re-split the data. This time, data will be splitted according to labels ?. 
+    - Seems directly `fit`  does not work.
+
+- See the Flwr tutorial, already watched that vedio, will try apply this.
+
+- More models to be applied
+
+  - LSTM
+
+### To 6/26
+
+- **Fix two curcial bugs for 6/21's work !!!**
+
+  - Shallow Copy v.s. Deep Copy
+
+    - Find the accuracy keeps increasing across clients.
+
+      - Ideal:
+
+        - ```
+          client0:
+          	ac epoch 0: 0.88
+          	ac epoch 1: 0.93
+          client1:
+          	ac epoch 0: 0.87
+          	ac epoch 1: 0.92
+          Average ...
+          ```
+
+      - Real:
+
+        - ```
+          client0:
+          	ac epoch 0: 0.88
+          	ac epoch 1: 0.93
+          client1:
+          	ac epoch 0: 0.92
+          	ac epoch 1: 0.98
+          Average ...		
+          ```
+
+  - tf.keras.models.clone_model does not restore the weights!!
+
+    - Set `learning_rate = 0` to debug
+
+- More functions:
+
+  - Weight averaging
+  - FedAvg with MLP
+
+- Discussion of 'W' Function
+
+  - Real Function might have more “hole” , local minimum.
+
+  - Real test on FedAvg MLP.
+
+    - ```
+      model = Sequential()
+      model.add(Dense(128, input_dim=input_size, activation='relu'))
+      model.add(Dense(128, activation='relu'))
+      model.add(Dense(128, activation='relu'))
+      model.add(Dense(128, activation='relu'))
+      model.add(Dense(128, activation='relu'))
+      model.add(Dense(64, activation='relu'))
+      model.add(Dense(output_size, activation='softmax'))
+      ```
+
+    - The first round, each client got 0.98 acc, while averaging got 0.80 acc. 
+    - The second round, each client got 0.98 acc, averaging got 0.99 acc, which becomes nice acc.
+
+- Two questions:
+
+  - Running the simple MLP model on GPU RTX Titan (from DKU) is much slower than my Computer CPU
+  - Do I need to seperate the validation_data in each client?
+
+### To 6/7
+
+-   Record fundamental dp method.
+
 ### To 6/6
 
 -   Read and record [*Communication-Efficient Learning of Deep Networks from Decentralized Data*](Paper\_notes/Notes\_0.md)

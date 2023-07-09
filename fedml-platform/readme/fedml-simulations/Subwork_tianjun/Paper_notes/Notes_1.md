@@ -1,10 +1,6 @@
-# Notes: *Communication-Efficient Learning of Deep Networks from Decentralized Data*
+# Notes:Fundamental Differential Privacy Method
 
-Read Time: 20230606
-
-Link: https://arxiv.org/pdf/1602.05629.pdf
-
-This is the first Federated Learning paper, and was often mentioned in those project sent to me.
+The fundamental method of differential privacy are generally three distribution (noise): **Laplace Noice**, **Gaussian Noice** and 
 
 ## Abstract
 
@@ -65,7 +61,7 @@ State-of-the-art = master piece 杰作
 
 Select $C$-fraction of clients, ($C = 1$ Corresponds to full-batch gradient descent).
 
-When $C = 1$, with fixed learning rate $η$ and each client compute $g_k = \nabla{F_k}({w_t})$ central server aggregates the gradients and applies
+When $C = 1$, with fixed learning rate $η$ and each clienet compute $g_k = \nabla{F_k}({w_t})$ central server aggregates the gradients and applies
 $$
 w_{t+1} ← w_{t} - \eta\sum\limits_{k=1}^{K}{\frac{n_k}{n}g_k}
 $$
